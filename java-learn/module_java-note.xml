@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_java-note" default="compile.module.java-note">
+  <dirname property="module.java-note.basedir" file="${ant.file.module_java-note}"/>
+  
+  <property name="module.jdk.home.java-note" value="${jdk.home.1.8}"/>
+  <property name="module.jdk.bin.java-note" value="${jdk.bin.1.8}"/>
+  <property name="module.jdk.classpath.java-note" value="jdk.classpath.1.8"/>
+  
+  <property name="compiler.args.java-note" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="java-note.output.dir" value="${module.java-note.basedir}/target/classes"/>
+  <property name="java-note.testoutput.dir" value="${module.java-note.basedir}/target/test-classes"/>
+  
+  <path id="java-note.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="java-note.module.production.classpath">
+    <path refid="${module.jdk.classpath.java-note}"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter-api:5.0.0-rc3.classpath"/>
+    <path refid="library.maven:_org.opentest4j:opentest4j:1.0.0-rc1.classpath"/>
+    <path refid="library.maven:_org.junit.platform:junit-platform-commons:1.0.0-rc3.classpath"/>
+    <path refid="library.maven:_org.testng:testng:6.10.classpath"/>
+    <path refid="library.maven:_com.beust:jcommander:1.48.classpath"/>
+    <path refid="library.maven:_junit:junit:4.12.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.maven:_org.json:json:20090211.classpath"/>
+  </path>
+  
+  <path id="java-note.runtime.production.module.classpath">
+    <pathelement location="${java-note.output.dir}"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter-api:5.0.0-rc3.classpath"/>
+    <path refid="library.maven:_org.opentest4j:opentest4j:1.0.0-rc1.classpath"/>
+    <path refid="library.maven:_org.junit.platform:junit-platform-commons:1.0.0-rc3.classpath"/>
+    <path refid="library.maven:_org.testng:testng:6.10.classpath"/>
+    <path refid="library.maven:_com.beust:jcommander:1.48.classpath"/>
+    <path refid="library.maven:_junit:junit:4.12.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.maven:_org.json:json:20090211.classpath"/>
+  </path>
+  
+  <path id="java-note.module.classpath">
+    <path refid="${module.jdk.classpath.java-note}"/>
+    <pathelement location="${java-note.output.dir}"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter-api:5.0.0-rc3.classpath"/>
+    <path refid="library.maven:_org.opentest4j:opentest4j:1.0.0-rc1.classpath"/>
+    <path refid="library.maven:_org.junit.platform:junit-platform-commons:1.0.0-rc3.classpath"/>
+    <path refid="library.maven:_org.testng:testng:6.10.classpath"/>
+    <path refid="library.maven:_com.beust:jcommander:1.48.classpath"/>
+    <path refid="library.maven:_junit:junit:4.12.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.25.classpath"/>
+    <path refid="library.maven:_org.json:json:20090211.classpath"/>
+    <path refid="library.maven:_com.aventstack:extentreports:3.0.3.classpath"/>
+    <path refid="library.maven:_org.freemarker:freemarker:2.3.23.classpath"/>
+    <path refid="library.maven:_org.mongodb:mongodb-driver:3.3.0.classpath"/>
+    <path refid="library.maven:_org.mongodb:bson:3.3.0.classpath"/>
+    <path refid="library.maven:_org.mongodb:mongodb-driver-core:3.3.0.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpclient:4.5.2.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpcore:4.4.4.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.2.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.9.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpmime:4.5.2.classpath"/>
+    <path refid="library.maven:_org.jsoup:jsoup:1.9.2.classpath"/>
+  </path>
+  
+  <path id="java-note.runtime.module.classpath">
+    <pathelement location="${java-note.testoutput.dir}"/>
+    <pathelement location="${java-note.output.dir}"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter-api:5.0.0-rc3.classpath"/>
+    <path refid="library.maven:_org.opentest4j:opentest4j:1.0.0-rc1.classpath"/>
+    <path refid="library.maven:_org.junit.platform:junit-platform-commons:1.0.0-rc3.classpath"/>
+    <path refid="library.maven:_org.testng:testng:6.10.classpath"/>
+    <path refid="library.maven:_com.beust:jcommander:1.48.classpath"/>
+    <path refid="library.maven:_junit:junit:4.12.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.25.classpath"/>
+    <path refid="library.maven:_org.json:json:20090211.classpath"/>
+    <path refid="library.maven:_com.aventstack:extentreports:3.0.3.classpath"/>
+    <path refid="library.maven:_org.freemarker:freemarker:2.3.23.classpath"/>
+    <path refid="library.maven:_org.mongodb:mongodb-driver:3.3.0.classpath"/>
+    <path refid="library.maven:_org.mongodb:bson:3.3.0.classpath"/>
+    <path refid="library.maven:_org.mongodb:mongodb-driver-core:3.3.0.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpclient:4.5.2.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpcore:4.4.4.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.2.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.9.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpmime:4.5.2.classpath"/>
+    <path refid="library.maven:_org.jsoup:jsoup:1.9.2.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.java-note">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.java-note">
+    <patternset refid="excluded.from.module.java-note"/>
+  </patternset>
+  
+  <path id="java-note.module.sourcepath">
+    <dirset dir="${module.java-note.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="java-note.module.test.sourcepath">
+    <dirset dir="${module.java-note.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.java-note" depends="compile.module.java-note.production,compile.module.java-note.tests" description="Compile module java-note"/>
+  
+  <target name="compile.module.java-note.production" depends="register.custom.compilers" description="Compile module java-note; production classes">
+    <mkdir dir="${java-note.output.dir}"/>
+    <javac2 destdir="${java-note.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.java-note}/javac">
+      <compilerarg line="${compiler.args.java-note}"/>
+      <bootclasspath refid="java-note.module.bootclasspath"/>
+      <classpath refid="java-note.module.production.classpath"/>
+      <src refid="java-note.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.java-note"/>
+    </javac2>
+    
+    <copy todir="${java-note.output.dir}">
+      <fileset dir="${module.java-note.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.java-note.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.java-note.tests" depends="register.custom.compilers,compile.module.java-note.production" description="compile module java-note; test classes" unless="skip.tests">
+    <mkdir dir="${java-note.testoutput.dir}"/>
+    <javac2 destdir="${java-note.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.java-note}/javac">
+      <compilerarg line="${compiler.args.java-note}"/>
+      <bootclasspath refid="java-note.module.bootclasspath"/>
+      <classpath refid="java-note.module.classpath"/>
+      <src refid="java-note.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.java-note"/>
+    </javac2>
+    
+    <copy todir="${java-note.testoutput.dir}">
+      <fileset dir="${module.java-note.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.java-note" description="cleanup module">
+    <delete dir="${java-note.output.dir}"/>
+    <delete dir="${java-note.testoutput.dir}"/>
+  </target>
+</project>

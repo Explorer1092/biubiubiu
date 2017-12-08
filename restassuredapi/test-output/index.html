@@ -1,0 +1,669 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='http://extentreports.com/resx/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>自动化测试报告</title>
+
+	<style type='text/css'>
+		.node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>自动化测试报告</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Sep 6, 2017 02:46:22 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>v3.0.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>test-group</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Suites</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>7</span> suite(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> suite(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Suites</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>testPrintMessage</span>
+						<span class='test-time'>Sep 6, 2017 02:46:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 6, 2017 02:46:22 PM</span>
+	<span class='label end-time'>Sep 6, 2017 02:46:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>2:46:25 PM</td>
+					<td class='step-details'>message:Manisha</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:46:25 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>testSalutationMessage</span>
+						<span class='test-time'>Sep 6, 2017 02:46:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 6, 2017 02:46:22 PM</span>
+	<span class='label end-time'>Sep 6, 2017 02:46:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:46:25 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>testsuper</span>
+						<span class='test-time'>Sep 6, 2017 02:46:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 6, 2017 02:46:22 PM</span>
+	<span class='label end-time'>Sep 6, 2017 02:46:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:46:25 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>testcase</span>
+						<span class='test-time'>Sep 6, 2017 02:46:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 6, 2017 02:46:22 PM</span>
+	<span class='label end-time'>Sep 6, 2017 02:46:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+778ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>2:46:25 PM</td>
+					<td class='step-details'>status:200</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>2:46:25 PM</td>
+					<td class='step-details'>rsp:{"total":21,"data":[{"id":364,"orderId":117417494750364,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497881967000,"chargeId":"ch_X544GCyPun9O5Sy54Ga5COW9","accountId":745,"mobile":"18611459475","productId":11,"convertLessonCount":0,"createTime":1497881947000,"updateTime":1499055897000,"expireTimeMillis":null,"productDto":{"id":11,"code":2017061903,"name":"测试product-11","description":"我是测试product-11，库存10个，单人最多购买2个。包含测试sku-1，共10课时，sku-1原价10元，sku-1折扣价0.01元，商品总价0.01元","summary":"","logo":"","buyLimitCount":2,"inventory":10,"actualTotalPrice":0.01,"sales":0,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497887700000,"planOfflineTime":1498811400000,"actualOnlineTime":1497861000000,"createTime":1497860818000,"updateTime":1497887700000,"productSkuMappingDtoList":[{"id":13,"productId":11,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497860818000,"updateTime":1497860818000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":360,"orderId":117417362080360,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497880976000,"chargeId":"ch_HiTeLSGaH8O0TOq18KjjfvbT","accountId":745,"mobile":"18611459475","productId":4,"convertLessonCount":0,"createTime":1497880620000,"updateTime":1499055898000,"expireTimeMillis":null,"productDto":{"id":4,"code":2017061604,"name":"测试product-4","description":"我是测试product-4，库存10个，单人最多购买5个。包含测试sku-2，共20课时。sku-2原价20元，折扣价0.01元。商品总价0.01元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.01,"sales":6,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881619000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596820000,"createTime":1497596733000,"updateTime":1497881619000,"productSkuMappingDtoList":[{"id":6,"productId":4,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596733000,"updateTime":1497596733000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":359,"orderId":117417360730359,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":2,"payTime":1497880611000,"chargeId":"ch_KWDyzDr1q1O0De9yPSa9uf1S","accountId":745,"mobile":"18611459475","productId":5,"convertLessonCount":0,"createTime":1497880607000,"updateTime":1499055898000,"expireTimeMillis":null,"productDto":{"id":5,"code":2017061701,"name":"测试product-5","description":"我是测试product-5，库存10个，单人最多购买2个。包含测试sku-1，共10课时，sku-1原价10元，sku-1折扣价0.01元，商品总价0.01元","summary":"","logo":"","buyLimitCount":2,"inventory":10,"actualTotalPrice":0.01,"sales":1,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881621000,"planOfflineTime":1498805700000,"actualOnlineTime":1497709920000,"createTime":1497706361000,"updateTime":1497881621000,"productSkuMappingDtoList":[{"id":7,"productId":5,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497706361000,"updateTime":1497706361000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":355,"orderId":117417311370355,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497880592000,"chargeId":"ch_q1KK8SmzTmzDGWHeTSjHiz18","accountId":745,"mobile":"18611459475","productId":4,"convertLessonCount":0,"createTime":1497880113000,"updateTime":1499055899000,"expireTimeMillis":null,"productDto":{"id":4,"code":2017061604,"name":"测试product-4","description":"我是测试product-4，库存10个，单人最多购买5个。包含测试sku-2，共20课时。sku-2原价20元，折扣价0.01元。商品总价0.01元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.01,"sales":6,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881619000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596820000,"createTime":1497596733000,"updateTime":1497881619000,"productSkuMappingDtoList":[{"id":6,"productId":4,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596733000,"updateTime":1497596733000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":331,"orderId":117417346130331,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497879393000,"chargeId":"ch_LiXnrLuDa9y5rLqb90rbvXHK","accountId":745,"mobile":"18611459475","productId":4,"convertLessonCount":0,"createTime":1497878461000,"updateTime":1499055912000,"expireTimeMillis":null,"productDto":{"id":4,"code":2017061604,"name":"测试product-4","description":"我是测试product-4，库存10个，单人最多购买5个。包含测试sku-2，共20课时。sku-2原价20元，折扣价0.01元。商品总价0.01元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.01,"sales":6,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881619000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596820000,"createTime":1497596733000,"updateTime":1497881619000,"productSkuMappingDtoList":[{"id":6,"productId":4,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596733000,"updateTime":1497596733000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":318,"orderId":117416915990318,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497866165000,"chargeId":"ch_er9mLOurfvDGWHS4i1ebrjDG","accountId":745,"mobile":"18611459475","productId":10,"convertLessonCount":0,"createTime":1497866159000,"updateTime":1499055912000,"expireTimeMillis":null,"productDto":{"id":10,"code":2017061902,"name":"测试product-10","description":"我是测试product-10，库存10个，单人最多购买2个。包含测试sku-1，共10课时，sku-1原价10元，sku-1折扣价0.01元，商品总价0.01元","summary":"","logo":"","buyLimitCount":2,"inventory":10,"actualTotalPrice":0.01,"sales":0,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881633000,"planOfflineTime":1498811400000,"actualOnlineTime":1497861000000,"createTime":1497860814000,"updateTime":1497881633000,"productSkuMappingDtoList":[{"id":12,"productId":10,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497860814000,"updateTime":1497860814000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":252,"orderId":117414388840252,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497771893000,"chargeId":"ch_GuLy9GLmnXL0LKOujLqzLm94","accountId":745,"mobile":"18611459475","productId":8,"convertLessonCount":0,"createTime":1497771888000,"updateTime":1499055920000,"expireTimeMillis":null,"productDto":{"id":8,"code":2017061704,"name":"测试product-8","description":"我是测试product-8，库存10个，单人最多购买2个。包含测试sku-1，共10课时，sku-1原价10元，sku-1折扣价0.01元，商品总价0.01元","summary":"","logo":"","buyLimitCount":2,"inventory":10,"actualTotalPrice":0.01,"sales":4,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881628000,"planOfflineTime":1498805700000,"actualOnlineTime":1497709920000,"createTime":1497706381000,"updateTime":1497881628000,"productSkuMappingDtoList":[{"id":10,"productId":8,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497706381000,"updateTime":1497706381000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":213,"orderId":117412461110213,"price":0.02,"discountPrice":0.00,"amount":2,"payChannel":"wx_pub","payStatus":2,"payTime":1497702616000,"chargeId":"ch_fbDSu9nf9CSOP8qrr1KOG48S","accountId":745,"mobile":"18611459475","productId":3,"convertLessonCount":0,"createTime":1497702611000,"updateTime":1499055925000,"expireTimeMillis":null,"productDto":{"id":3,"code":2017061603,"name":"测试product-3","description":"我是测试product-3，库存10个，单人最多购买5个。包含测试sku-1和sku-2，共30课时。sku-1原价10元，折扣价0.01元;sku-2原价20元，折扣价0.01元。商品总价0.02元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.02,"sales":7,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497882000000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596700000,"createTime":1497596665000,"updateTime":1497882000000,"productSkuMappingDtoList":[{"id":4,"productId":3,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497596665000,"updateTime":1497596665000},{"id":5,"productId":3,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596665000,"updateTime":1497596665000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":197,"orderId":117412240490197,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":2,"payTime":1497695582000,"chargeId":"ch_Kivb9O5044CGC8Gm54DWbTqD","accountId":745,"mobile":"18611459475","productId":4,"convertLessonCount":0,"createTime":1497694404000,"updateTime":1499055929000,"expireTimeMillis":null,"productDto":{"id":4,"code":2017061604,"name":"测试product-4","description":"我是测试product-4，库存10个，单人最多购买5个。包含测试sku-2，共20课时。sku-2原价20元，折扣价0.01元。商品总价0.01元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.01,"sales":6,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881619000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596820000,"createTime":1497596733000,"updateTime":1497881619000,"productSkuMappingDtoList":[{"id":6,"productId":4,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596733000,"updateTime":1497596733000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":193,"orderId":117412295080193,"price":0.02,"discountPrice":0.00,"amount":2,"payChannel":"wx_pub","payStatus":1,"payTime":1497694421000,"chargeId":"ch_84efLOv5yX90qnL8mPavTqz1","accountId":745,"mobile":"18611459475","productId":3,"convertLessonCount":0,"createTime":1497693950000,"updateTime":1499055929000,"expireTimeMillis":null,"productDto":{"id":3,"code":2017061603,"name":"测试product-3","description":"我是测试product-3，库存10个，单人最多购买5个。包含测试sku-1和sku-2，共30课时。sku-1原价10元，折扣价0.01元;sku-2原价20元，折扣价0.01元。商品总价0.02元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.02,"sales":7,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497882000000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596700000,"createTime":1497596665000,"updateTime":1497882000000,"productSkuMappingDtoList":[{"id":4,"productId":3,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497596665000,"updateTime":1497596665000},{"id":5,"productId":3,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596665000,"updateTime":1497596665000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":171,"orderId":117412037720171,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497689397000,"chargeId":"ch_PKa904XXHqvTKO0yfDLOG0WL","accountId":745,"mobile":"18611459475","productId":4,"convertLessonCount":0,"createTime":1497689377000,"updateTime":1499055930000,"expireTimeMillis":null,"productDto":{"id":4,"code":2017061604,"name":"测试product-4","description":"我是测试product-4，库存10个，单人最多购买5个。包含测试sku-2，共20课时。sku-2原价20元，折扣价0.01元。商品总价0.01元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.01,"sales":6,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881619000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596820000,"createTime":1497596733000,"updateTime":1497881619000,"productSkuMappingDtoList":[{"id":6,"productId":4,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596733000,"updateTime":1497596733000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":170,"orderId":117412034770170,"price":0.02,"discountPrice":0.00,"amount":2,"payChannel":"wx_pub","payStatus":1,"payTime":1497689354000,"chargeId":"ch_9O00C4P84S0GSGarDGCmH84G","accountId":745,"mobile":"18611459475","productId":2,"convertLessonCount":0,"createTime":1497689347000,"updateTime":1499055931000,"expireTimeMillis":null,"productDto":{"id":2,"code":2017061602,"name":"测试product-2","description":"我是测试product-2，库存10个，单人最多购买5个。包含测试sku-1和sku-2，共30课时。sku-1原价10元，折扣价0.01元;sku-2原价20元，折扣价0.01元。商品总价0.02元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.02,"sales":4,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881615000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596400000,"createTime":1497596371000,"updateTime":1497881615000,"productSkuMappingDtoList":[{"id":2,"productId":2,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497596371000,"updateTime":1497596371000},{"id":3,"productId":2,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596371000,"updateTime":1497596371000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":159,"orderId":117411907990159,"price":0.02,"discountPrice":0.00,"amount":2,"payChannel":"wx_pub","payStatus":2,"payTime":1497685089000,"chargeId":"ch_DaLOy1jr9S08afzfHKuT4ujH","accountId":745,"mobile":"18611459475","productId":3,"convertLessonCount":0,"createTime":1497685079000,"updateTime":1499055931000,"expireTimeMillis":null,"productDto":{"id":3,"code":2017061603,"name":"测试product-3","description":"我是测试product-3，库存10个，单人最多购买5个。包含测试sku-1和sku-2，共30课时。sku-1原价10元，折扣价0.01元;sku-2原价20元，折扣价0.01元。商品总价0.02元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.02,"sales":7,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497882000000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596700000,"createTime":1497596665000,"updateTime":1497882000000,"productSkuMappingDtoList":[{"id":4,"productId":3,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497596665000,"updateTime":1497596665000},{"id":5,"productId":3,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596665000,"updateTime":1497596665000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":133,"orderId":117411710140133,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":2,"payTime":1497679116000,"chargeId":"ch_8Gm9e11qPSa11C4GS4HyX58K","accountId":745,"mobile":"18611459475","productId":1,"convertLessonCount":0,"createTime":1497679101000,"updateTime":1499055934000,"expireTimeMillis":null,"productDto":{"id":1,"code":2017061601,"name":"测试product-1","description":"我是测试product-1，库存10个，单人最多购买2个。包含测试sku-1，共10课时，sku-1原价10元，sku-1折扣价0.01元，商品总价0.01元","summary":"","logo":"","buyLimitCount":2,"inventory":10,"actualTotalPrice":0.01,"sales":23,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1498208339000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596100000,"createTime":1497595962000,"updateTime":1498208339000,"productSkuMappingDtoList":[{"id":1,"productId":1,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497595962000,"updateTime":1497595962000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":111,"orderId":117411557860111,"price":0.02,"discountPrice":0.00,"amount":2,"payChannel":"wx_pub","payStatus":2,"payTime":1497671640000,"chargeId":"ch_WHSuvL0affPCO8q9KK1iHevH","accountId":745,"mobile":"18611459475","productId":3,"convertLessonCount":0,"createTime":1497671578000,"updateTime":1499055936000,"expireTimeMillis":null,"productDto":{"id":3,"code":2017061603,"name":"测试product-3","description":"我是测试product-3，库存10个，单人最多购买5个。包含测试sku-1和sku-2，共30课时。sku-1原价10元，折扣价0.01元;sku-2原价20元，折扣价0.01元。商品总价0.02元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.02,"sales":7,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497882000000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596700000,"createTime":1497596665000,"updateTime":1497882000000,"productSkuMappingDtoList":[{"id":4,"productId":3,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497596665000,"updateTime":1497596665000},{"id":5,"productId":3,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596665000,"updateTime":1497596665000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null}],"code":200,"message":""}</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>2:46:25 PM</td>
+					<td class='step-details'>预期为：200实际返回值为：200</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:46:25 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>testMethodOne</span>
+						<span class='test-time'>Sep 6, 2017 02:46:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 6, 2017 02:46:25 PM</span>
+	<span class='label end-time'>Sep 6, 2017 02:46:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>test-group</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:46:25 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>testMethodThree</span>
+						<span class='test-time'>Sep 6, 2017 02:46:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 6, 2017 02:46:25 PM</span>
+	<span class='label end-time'>Sep 6, 2017 02:46:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>test-group</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:46:25 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>testMethodTwo</span>
+						<span class='test-time'>Sep 6, 2017 02:46:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 6, 2017 02:46:25 PM</span>
+	<span class='label end-time'>Sep 6, 2017 02:46:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:46:25 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>test-group</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 6, 2017 02:46:25 PM</td>
+										<td class='linked' test-id='5'>testMethodOne</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 6, 2017 02:46:25 PM</td>
+										<td class='linked' test-id='6'>testMethodThree</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Suites
+					<div class='panel-lead'>7</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Test Methods
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Sep 6, 2017 02:46:22 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Sep 6, 2017 02:46:22 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>2ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>os.name</td>
+								<td>Mac OS X</td>
+							</tr>
+							<tr>
+								<td>os.arch</td>
+								<td>x86_64</td>
+							</tr>
+							<tr>
+								<td>os.version</td>
+								<td>10.12.5</td>
+							</tr>
+							<tr>
+								<td>java.version</td>
+								<td>1.8.0_121</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>test-group</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<div id='testrunner-logs-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>TestRunner Logs</h5>
+		
+		<div class='card-panel'>
+				message:Manisha
+				status:200
+				rsp:{"total":21,"data":[{"id":364,"orderId":117417494750364,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497881967000,"chargeId":"ch_X544GCyPun9O5Sy54Ga5COW9","accountId":745,"mobile":"18611459475","productId":11,"convertLessonCount":0,"createTime":1497881947000,"updateTime":1499055897000,"expireTimeMillis":null,"productDto":{"id":11,"code":2017061903,"name":"测试product-11","description":"我是测试product-11，库存10个，单人最多购买2个。包含测试sku-1，共10课时，sku-1原价10元，sku-1折扣价0.01元，商品总价0.01元","summary":"","logo":"","buyLimitCount":2,"inventory":10,"actualTotalPrice":0.01,"sales":0,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497887700000,"planOfflineTime":1498811400000,"actualOnlineTime":1497861000000,"createTime":1497860818000,"updateTime":1497887700000,"productSkuMappingDtoList":[{"id":13,"productId":11,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497860818000,"updateTime":1497860818000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":360,"orderId":117417362080360,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497880976000,"chargeId":"ch_HiTeLSGaH8O0TOq18KjjfvbT","accountId":745,"mobile":"18611459475","productId":4,"convertLessonCount":0,"createTime":1497880620000,"updateTime":1499055898000,"expireTimeMillis":null,"productDto":{"id":4,"code":2017061604,"name":"测试product-4","description":"我是测试product-4，库存10个，单人最多购买5个。包含测试sku-2，共20课时。sku-2原价20元，折扣价0.01元。商品总价0.01元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.01,"sales":6,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881619000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596820000,"createTime":1497596733000,"updateTime":1497881619000,"productSkuMappingDtoList":[{"id":6,"productId":4,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596733000,"updateTime":1497596733000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":359,"orderId":117417360730359,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":2,"payTime":1497880611000,"chargeId":"ch_KWDyzDr1q1O0De9yPSa9uf1S","accountId":745,"mobile":"18611459475","productId":5,"convertLessonCount":0,"createTime":1497880607000,"updateTime":1499055898000,"expireTimeMillis":null,"productDto":{"id":5,"code":2017061701,"name":"测试product-5","description":"我是测试product-5，库存10个，单人最多购买2个。包含测试sku-1，共10课时，sku-1原价10元，sku-1折扣价0.01元，商品总价0.01元","summary":"","logo":"","buyLimitCount":2,"inventory":10,"actualTotalPrice":0.01,"sales":1,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881621000,"planOfflineTime":1498805700000,"actualOnlineTime":1497709920000,"createTime":1497706361000,"updateTime":1497881621000,"productSkuMappingDtoList":[{"id":7,"productId":5,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497706361000,"updateTime":1497706361000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":355,"orderId":117417311370355,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497880592000,"chargeId":"ch_q1KK8SmzTmzDGWHeTSjHiz18","accountId":745,"mobile":"18611459475","productId":4,"convertLessonCount":0,"createTime":1497880113000,"updateTime":1499055899000,"expireTimeMillis":null,"productDto":{"id":4,"code":2017061604,"name":"测试product-4","description":"我是测试product-4，库存10个，单人最多购买5个。包含测试sku-2，共20课时。sku-2原价20元，折扣价0.01元。商品总价0.01元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.01,"sales":6,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881619000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596820000,"createTime":1497596733000,"updateTime":1497881619000,"productSkuMappingDtoList":[{"id":6,"productId":4,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596733000,"updateTime":1497596733000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":331,"orderId":117417346130331,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497879393000,"chargeId":"ch_LiXnrLuDa9y5rLqb90rbvXHK","accountId":745,"mobile":"18611459475","productId":4,"convertLessonCount":0,"createTime":1497878461000,"updateTime":1499055912000,"expireTimeMillis":null,"productDto":{"id":4,"code":2017061604,"name":"测试product-4","description":"我是测试product-4，库存10个，单人最多购买5个。包含测试sku-2，共20课时。sku-2原价20元，折扣价0.01元。商品总价0.01元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.01,"sales":6,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881619000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596820000,"createTime":1497596733000,"updateTime":1497881619000,"productSkuMappingDtoList":[{"id":6,"productId":4,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596733000,"updateTime":1497596733000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":318,"orderId":117416915990318,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497866165000,"chargeId":"ch_er9mLOurfvDGWHS4i1ebrjDG","accountId":745,"mobile":"18611459475","productId":10,"convertLessonCount":0,"createTime":1497866159000,"updateTime":1499055912000,"expireTimeMillis":null,"productDto":{"id":10,"code":2017061902,"name":"测试product-10","description":"我是测试product-10，库存10个，单人最多购买2个。包含测试sku-1，共10课时，sku-1原价10元，sku-1折扣价0.01元，商品总价0.01元","summary":"","logo":"","buyLimitCount":2,"inventory":10,"actualTotalPrice":0.01,"sales":0,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881633000,"planOfflineTime":1498811400000,"actualOnlineTime":1497861000000,"createTime":1497860814000,"updateTime":1497881633000,"productSkuMappingDtoList":[{"id":12,"productId":10,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497860814000,"updateTime":1497860814000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":252,"orderId":117414388840252,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497771893000,"chargeId":"ch_GuLy9GLmnXL0LKOujLqzLm94","accountId":745,"mobile":"18611459475","productId":8,"convertLessonCount":0,"createTime":1497771888000,"updateTime":1499055920000,"expireTimeMillis":null,"productDto":{"id":8,"code":2017061704,"name":"测试product-8","description":"我是测试product-8，库存10个，单人最多购买2个。包含测试sku-1，共10课时，sku-1原价10元，sku-1折扣价0.01元，商品总价0.01元","summary":"","logo":"","buyLimitCount":2,"inventory":10,"actualTotalPrice":0.01,"sales":4,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881628000,"planOfflineTime":1498805700000,"actualOnlineTime":1497709920000,"createTime":1497706381000,"updateTime":1497881628000,"productSkuMappingDtoList":[{"id":10,"productId":8,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497706381000,"updateTime":1497706381000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":213,"orderId":117412461110213,"price":0.02,"discountPrice":0.00,"amount":2,"payChannel":"wx_pub","payStatus":2,"payTime":1497702616000,"chargeId":"ch_fbDSu9nf9CSOP8qrr1KOG48S","accountId":745,"mobile":"18611459475","productId":3,"convertLessonCount":0,"createTime":1497702611000,"updateTime":1499055925000,"expireTimeMillis":null,"productDto":{"id":3,"code":2017061603,"name":"测试product-3","description":"我是测试product-3，库存10个，单人最多购买5个。包含测试sku-1和sku-2，共30课时。sku-1原价10元，折扣价0.01元;sku-2原价20元，折扣价0.01元。商品总价0.02元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.02,"sales":7,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497882000000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596700000,"createTime":1497596665000,"updateTime":1497882000000,"productSkuMappingDtoList":[{"id":4,"productId":3,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497596665000,"updateTime":1497596665000},{"id":5,"productId":3,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596665000,"updateTime":1497596665000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":197,"orderId":117412240490197,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":2,"payTime":1497695582000,"chargeId":"ch_Kivb9O5044CGC8Gm54DWbTqD","accountId":745,"mobile":"18611459475","productId":4,"convertLessonCount":0,"createTime":1497694404000,"updateTime":1499055929000,"expireTimeMillis":null,"productDto":{"id":4,"code":2017061604,"name":"测试product-4","description":"我是测试product-4，库存10个，单人最多购买5个。包含测试sku-2，共20课时。sku-2原价20元，折扣价0.01元。商品总价0.01元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.01,"sales":6,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881619000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596820000,"createTime":1497596733000,"updateTime":1497881619000,"productSkuMappingDtoList":[{"id":6,"productId":4,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596733000,"updateTime":1497596733000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":193,"orderId":117412295080193,"price":0.02,"discountPrice":0.00,"amount":2,"payChannel":"wx_pub","payStatus":1,"payTime":1497694421000,"chargeId":"ch_84efLOv5yX90qnL8mPavTqz1","accountId":745,"mobile":"18611459475","productId":3,"convertLessonCount":0,"createTime":1497693950000,"updateTime":1499055929000,"expireTimeMillis":null,"productDto":{"id":3,"code":2017061603,"name":"测试product-3","description":"我是测试product-3，库存10个，单人最多购买5个。包含测试sku-1和sku-2，共30课时。sku-1原价10元，折扣价0.01元;sku-2原价20元，折扣价0.01元。商品总价0.02元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.02,"sales":7,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497882000000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596700000,"createTime":1497596665000,"updateTime":1497882000000,"productSkuMappingDtoList":[{"id":4,"productId":3,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497596665000,"updateTime":1497596665000},{"id":5,"productId":3,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596665000,"updateTime":1497596665000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":171,"orderId":117412037720171,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":1,"payTime":1497689397000,"chargeId":"ch_PKa904XXHqvTKO0yfDLOG0WL","accountId":745,"mobile":"18611459475","productId":4,"convertLessonCount":0,"createTime":1497689377000,"updateTime":1499055930000,"expireTimeMillis":null,"productDto":{"id":4,"code":2017061604,"name":"测试product-4","description":"我是测试product-4，库存10个，单人最多购买5个。包含测试sku-2，共20课时。sku-2原价20元，折扣价0.01元。商品总价0.01元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.01,"sales":6,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881619000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596820000,"createTime":1497596733000,"updateTime":1497881619000,"productSkuMappingDtoList":[{"id":6,"productId":4,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596733000,"updateTime":1497596733000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":170,"orderId":117412034770170,"price":0.02,"discountPrice":0.00,"amount":2,"payChannel":"wx_pub","payStatus":1,"payTime":1497689354000,"chargeId":"ch_9O00C4P84S0GSGarDGCmH84G","accountId":745,"mobile":"18611459475","productId":2,"convertLessonCount":0,"createTime":1497689347000,"updateTime":1499055931000,"expireTimeMillis":null,"productDto":{"id":2,"code":2017061602,"name":"测试product-2","description":"我是测试product-2，库存10个，单人最多购买5个。包含测试sku-1和sku-2，共30课时。sku-1原价10元，折扣价0.01元;sku-2原价20元，折扣价0.01元。商品总价0.02元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.02,"sales":4,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497881615000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596400000,"createTime":1497596371000,"updateTime":1497881615000,"productSkuMappingDtoList":[{"id":2,"productId":2,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497596371000,"updateTime":1497596371000},{"id":3,"productId":2,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596371000,"updateTime":1497596371000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":159,"orderId":117411907990159,"price":0.02,"discountPrice":0.00,"amount":2,"payChannel":"wx_pub","payStatus":2,"payTime":1497685089000,"chargeId":"ch_DaLOy1jr9S08afzfHKuT4ujH","accountId":745,"mobile":"18611459475","productId":3,"convertLessonCount":0,"createTime":1497685079000,"updateTime":1499055931000,"expireTimeMillis":null,"productDto":{"id":3,"code":2017061603,"name":"测试product-3","description":"我是测试product-3，库存10个，单人最多购买5个。包含测试sku-1和sku-2，共30课时。sku-1原价10元，折扣价0.01元;sku-2原价20元，折扣价0.01元。商品总价0.02元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.02,"sales":7,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497882000000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596700000,"createTime":1497596665000,"updateTime":1497882000000,"productSkuMappingDtoList":[{"id":4,"productId":3,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497596665000,"updateTime":1497596665000},{"id":5,"productId":3,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596665000,"updateTime":1497596665000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":133,"orderId":117411710140133,"price":0.01,"discountPrice":0.00,"amount":1,"payChannel":"wx_pub","payStatus":2,"payTime":1497679116000,"chargeId":"ch_8Gm9e11qPSa11C4GS4HyX58K","accountId":745,"mobile":"18611459475","productId":1,"convertLessonCount":0,"createTime":1497679101000,"updateTime":1499055934000,"expireTimeMillis":null,"productDto":{"id":1,"code":2017061601,"name":"测试product-1","description":"我是测试product-1，库存10个，单人最多购买2个。包含测试sku-1，共10课时，sku-1原价10元，sku-1折扣价0.01元，商品总价0.01元","summary":"","logo":"","buyLimitCount":2,"inventory":10,"actualTotalPrice":0.01,"sales":23,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1498208339000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596100000,"createTime":1497595962000,"updateTime":1498208339000,"productSkuMappingDtoList":[{"id":1,"productId":1,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497595962000,"updateTime":1497595962000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null},{"id":111,"orderId":117411557860111,"price":0.02,"discountPrice":0.00,"amount":2,"payChannel":"wx_pub","payStatus":2,"payTime":1497671640000,"chargeId":"ch_WHSuvL0affPCO8q9KK1iHevH","accountId":745,"mobile":"18611459475","productId":3,"convertLessonCount":0,"createTime":1497671578000,"updateTime":1499055936000,"expireTimeMillis":null,"productDto":{"id":3,"code":2017061603,"name":"测试product-3","description":"我是测试product-3，库存10个，单人最多购买5个。包含测试sku-1和sku-2，共30课时。sku-1原价10元，折扣价0.01元;sku-2原价20元，折扣价0.01元。商品总价0.02元","summary":"","logo":"","buyLimitCount":5,"inventory":10,"actualTotalPrice":0.02,"sales":7,"status":2,"isDiscount":1,"isConvert":0,"buyQualifications":0,"isNormalCourse":0,"showStatus":0,"contractId":null,"contractDto":null,"courseStartTime":null,"courseEndTime":null,"planOnlineTime":1497882000000,"planOfflineTime":1498805700000,"actualOnlineTime":1497596700000,"createTime":1497596665000,"updateTime":1497882000000,"productSkuMappingDtoList":[{"id":4,"productId":3,"skuId":1,"discountPrice":0.01,"sku":{"id":1,"skuCode":"00001","name":"测试sku-1","type":0,"status":0,"lessonCount":10,"lessonPrice":1.00,"description":"我是测试sku-1，总共10节课，每节课标准价1.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594798000,"updateTime":1497594798000},"createTime":1497596665000,"updateTime":1497596665000},{"id":5,"productId":3,"skuId":2,"discountPrice":0.01,"sku":{"id":2,"skuCode":"00002","name":"测试sku-2","type":0,"status":0,"lessonCount":20,"lessonPrice":2.00,"description":"我是测试sku-2，总共20节课，每节课标准价2.00元","courseId":1,"courseName":"我们的世界","consumePriority":0,"createTime":1497594842000,"updateTime":1497594842000},"createTime":1497596665000,"updateTime":1497596665000}]},"refundRecordDto":null,"totalLessonCount":null,"consumeLessonCount":null,"refundPrice":null}],"code":200,"message":""}
+				预期为：200实际返回值为：200
+		</div>
+	</div>
+</div>
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 7,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 0,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='http://extentreports.com/resx/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+	</body>
+	
+</html>

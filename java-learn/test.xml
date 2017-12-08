@@ -1,0 +1,28 @@
+<target name="test"
+        depends="compile-tests"
+        description="Compile and execute the JUnit tests.">
+    <mkdir dir="build/testoutput"/>
+    <junit printsummary="on" fork="${test.fork}"
+           forkmode="once" showoutput="true"
+           failureproperty="junit.failure">
+        <jvmarg value="-XX:-UseSplitVerifier"/>
+        <classpath refid="allclasspath.path" />
+        <classpath>
+            <pathelement location="${build.dir}/test" />
+        </classpath>
+        <jvmarg value="-javaagent:lib\aspectjweaver-1.6.11.jar"/>
+        <batchtest todir="build/testoutput">
+            <formatter type="brief" usefile="false" />
+            <formatter type="xml" />
+            <fileset dir="${build.dir}/test">
+                <include name="**/${test.class}.class" />
+            </fileset>
+        </batchtest>
+    </junit>
+    <junitreport>
+        <fileset dir="build/testoutput" includes="*.xml"/>
+        <report todir="build/testoutput"/>
+    </junitreport>
+    <fail if="junit.failure"
+          message="Unit tests failed. See build/testoutput/index.html" />
+</target>

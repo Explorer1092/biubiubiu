@@ -1,0 +1,15 @@
+1.OOP封装的有点
+def fetch(hostname,port,username,password):
+打开
+操作
+关闭
+pass
+
+class fun:
+    def __init__(self,hostname,username,password):
+
+
+2.模块调用问题
+3.类方法,静态方法,实力方法注意点
+4.重载方法
+5.讲解作业游戏人生

@@ -1,0 +1,288 @@
+1
+封装的好处：
+
+def fetch(hostname,port,username,password):
+    打开
+	操作
+	关闭
+     pass
+def modify(hostname,port,username,password):
+    pass
+def remove(hostname,port,username,password):
+    pass
+def create(hostname,port,username,password):
+    pass	
+class func:
+    def __init__(self,hostname,port,username,password):
+	    self.hostname=hostname
+		self.port=port
+		self.username=username
+		self.password=password	
+	
+	def fetch(self):
+		self.hostname
+    def modify(self):
+		pass
+    def create(self):
+		pass
+    def remove(self):
+        pass
+-----------------------------------------------
+2模块调用问题
+。。。。。
+
+
+3 类方法，静态方法，实例方法注意点
+(1)实例方法
+class Foo:
+    def __init__(self, name):
+        self.name = name
+    def hi(self):
+        print self.name
+
+if __name__ == '__main__':     
+    foo01 = Foo(‘alex’)
+	foo01.hi()     
+print type(Foo)     
+print type(foo01)     
+print id(foo01)     
+print id(Foo)
+－－－－－－－
+<type 'classobj'>
+<type 'instance'>
+40124704
+31323448
+
+可以看到，Foo的type为classobj（类对象，
+python中定义的类本身也是对象），foo01的
+type为instance（实例）。而hi()是实例方法，
+所以foo01.hi()会输出'alex'。实例方法的第
+一个参数默认为self，代指实例。self不是一个
+关键字，而是约定的写法。__init__()是生成实例时
+默认调用的实例方法。将Foo的定义改为以下形式：
+class Foo:
+    def __init__(this, name):
+        this.name = name
+    def hi(here):
+        print here.name
+(2)静态方法
+静态方法是一种普通函数，就位于类定义的命名空
+间中，它不会对任何实例类型进行操作。使用装饰
+器@staticmethod定义静态方法。类对象和实例都可
+以调用静态方法：
+class Foo:
+    def __init__(self, name):
+        self.name = name
+    def hi(self):
+        print self.name
+    @staticmethod
+    def add(a, b):
+        print a + b
+
+if __name__ == '__main__':     
+foo01 = Foo('alex')     
+foo01.hi()     
+foo01.add(1,2)     
+Foo.add(1, 2)
+－－－－－－－－
+alex
+3
+3
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+(3)类方法：
+类方法是将类本身作为对象进行操作的方法。类方法
+使用@classmethod装饰器定义，其第一个参数是类，
+约定写为cls。类对象和实例都可以调用类方法：
+
+
+class Foo:
+    name = 'alex'
+    @classmethod
+    def hi(cls, x):
+        print cls.name * x
+
+if __name__ == '__main__':     
+foo01 = Foo()     
+foo01.hi(2)     
+Foo.hi(3)
+－－－－－－－－－
+alex alex 
+alex alex alex
+－－－－－－－－－－－－－－－－－
+四、super
+super用来执行父类中的函数，例如：
+class Foo(object):
+    def hi(self):
+        print 'hi,Foo'
+
+class Foo2(Foo):     
+def hi(self):         
+super(Foo2, self).hi()
+if __name__ == '__main__':     
+    foo2 = Foo2()     
+    foo2.hi()
+－－－－－－－－－－－－－－－－－－
+hi,Foo
+
+注意，Foo类必须继承某个类（并且这个继承链开始于
+object类），否则会报错。
+
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+(5)类变量和实例变量
+class Foo(object):
+    val = 0
+    def __init__(self):
+        self.val = 1
+if __name__ == '__main__':
+     foo = Foo()
+     print foo.val
+     print Foo.val
+
+运行结果为：
+1
+0
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+实例也能够访问类变量，如下：
+
+
+class Foo(object):
+    val = 0
+    def __init__(self):
+        pass
+if __name__ == '__main__':
+    foo = Foo()
+    print foo.val
+    print Foo.val
+
+运行结果如下:
+
+0
+0
+
+另外，可以通过以下方式访问类变量：
+
+class Foo(object):
+    val = 3
+    def __init__(self):
+        print self.__class__.val
+if __name__ == '__main__':
+    foo = Foo()
+
+运行结果：
+
+3
+class Foo(object):
+    val = 3
+    def __init__(self):
+        pass
+    @classmethod
+    def echo(cls):
+        print cls.val
+if __name__ == '__main__':
+    Foo.echo()
+3
+－－－－－－－－－－－－－－－－－－－
+(6)、如何调用父类的构造函数
+子类（派生类）并不会自动调用父类（基类）的init
+方法，例如： 
+class Foo(object):
+    def __init__(self):
+        self.val = 1
+
+class Foo2(Foo):
+     def __init__(self):
+	 print self.val
+if __name__ == '__main__':
+     foo2 = Foo2()
+
+运行时报错。
+
+调用父类的init方法有两种，第一种： 
+
+
+class Foo(object):
+    def __init__(self):
+        self.val = 1
+
+class Foo2(Foo):
+     def __init__(self):
+	 Foo.__init__(self) 
+	 print self.val
+if __name__ == '__main__':
+     foo2 = Foo2()
+
+第二种：
+class Foo(object):
+    def __init__(self):
+        self.val = 1
+class Foo2(Foo):
+     def __init__(self):
+	 super(Foo2,self).__init__()
+	 print self.val
+if __name__ == '__main__':
+     foo2 = Foo2()
+1
+－－－－－－－－－－－－－－－－－－－－－－－－
+在Python中，我们使用对象的__dict__属性
+来保存该对象的名字空间中的东西，__dict__
+是一个字典（“键-值”对，一般“键”就是属性名
+或方法名，“值”就是属性的值或方法名所指向的
+真正的方法实体对象）。
+
+#__dict__:实例属性
+class Animal:
+	price = 10
+	__a = 22
+	def __init__(self):
+		self.__color = "red"
+		self.__price = 11
+
+class Dog(Animal):
+	__b = 10
+	c = 33
+
+if __name__ == "__main__":
+    dog=Dog()
+print (dog.__dict__)
+
+{'_Animal__price': 11, '_Animal__color': 'red'}
+-----------------------------------------------
+类有它自己的名字空间，它的名字空间中保存的是它的
+属性和方法；而类实例也有它自己的名字空间，它的名
+字空间中保存的是它自己的属性（不包含类的属性）。
+
+4 重载方法
+4.1 重载__setattr__方法：
+def  __setattr__(self, name, value):
+    # do-something
+object.__setattr__(self, name, value)
+# do-something
+
+
+4.2 重载__getattribute__方法：
+def  __getattribute__(self, name):
+    # do-something
+return object.__getattribute__(self, name)
+# do-something
+
+4.4 重载__getattr__方法：
+由于__getattr__方法是拦截未定义的属性，所以它没有
+其他三个操作符方法中那么多的限制，因此，你可以
+像正常的代码一样编写它。它的作用就是，当一段代
+码（用户写的，可能是故意，也可以是无意）获取了
+类或类实例中没有定义的属性时，程序将做出怎样的
+反应，而这个回应就在__getattr__方法中，由你来定。
+
+4.5 返回值
+__getattr__和__getattribute__应该返回属性name的
+值，但__setatrr__和__delattr__就返回None（None可
+以显示返回，也可以不显示返回；当不显示返回时，
+Python中的函数或方法默认返回None。
+
+
+
+
+
+
+
+		

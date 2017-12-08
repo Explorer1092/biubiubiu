@@ -1,0 +1,36 @@
+作业:
+
+1.给了一个配置文件,用户输入一个字符串,
+ {"backend":"test"}
+2.用户通过input输入的都是字符串,需要把字符串转换成字典
+import json
+json.loads()转换成字典
+3.通过字典拿取值,在去配置文件里找到这个值
+添加记录,删除记录
+1、查
+    输入：www.oldboy.org
+    获取当前backend下的所有记录
+
+2、新建
+    输入：
+        arg = {
+            'bakend': 'www.oldboy.org',
+            'record':{
+                'server': '100.1.7.9',
+                'weight': 20,
+                'maxconn': 30
+            }
+        }
+
+3、删除
+    输入：
+        arg = {
+            'bakend': 'www.oldboy.org',
+            'record':{
+                'server': '100.1.7.9',
+                'weight': 20,
+                'maxconn': 30
+            }
+        }
+
+需求
