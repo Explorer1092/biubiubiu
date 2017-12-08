@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="74" passed="74">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="1982" started-at="2017-08-26T07:32:05Z" finished-at="2017-08-26T07:32:07Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="1982" started-at="2017-08-26T07:32:05Z" finished-at="2017-08-26T07:32:07Z">
+      <class name="com.aventstack.extentreports.api.TestSingleLogsStatusTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.api.TestSingleLogsStatusTests@67b64c45]" name="setup" is-config="true" duration-ms="2" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyIfTestHasStatusError(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestSingleLogsStatusTests@67b64c45]" name="verifyIfTestHasStatusError" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestSingleLogsStatusTests.verifyIfTestHasStatusError(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasStatusError -->
+        <test-method status="PASS" signature="verifyIfTestHasStatusFail(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestSingleLogsStatusTests@67b64c45]" name="verifyIfTestHasStatusFail" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestSingleLogsStatusTests.verifyIfTestHasStatusFail(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasStatusFail -->
+        <test-method status="PASS" signature="verifyIfTestHasStatusFatal(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestSingleLogsStatusTests@67b64c45]" name="verifyIfTestHasStatusFatal" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestSingleLogsStatusTests.verifyIfTestHasStatusFatal(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasStatusFatal -->
+        <test-method status="PASS" signature="verifyIfTestHasStatusPass(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestSingleLogsStatusTests@67b64c45]" name="verifyIfTestHasStatusPass" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestSingleLogsStatusTests.verifyIfTestHasStatusPass(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasStatusPass -->
+        <test-method status="PASS" signature="verifyIfTestHasStatusPassWithOnlyInfoSingle(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestSingleLogsStatusTests@67b64c45]" name="verifyIfTestHasStatusPassWithOnlyInfoSingle" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestSingleLogsStatusTests.verifyIfTestHasStatusPassWithOnlyInfoSingle(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasStatusPassWithOnlyInfoSingle -->
+        <test-method status="PASS" signature="verifyIfTestHasStatusSkip(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestSingleLogsStatusTests@67b64c45]" name="verifyIfTestHasStatusSkip" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestSingleLogsStatusTests.verifyIfTestHasStatusSkip(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasStatusSkip -->
+        <test-method status="PASS" signature="verifyIfTestHasStatusWarning(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestSingleLogsStatusTests@67b64c45]" name="verifyIfTestHasStatusWarning" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestSingleLogsStatusTests.verifyIfTestHasStatusWarning(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasStatusWarning -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.api.TestSingleLogsStatusTests@67b64c45]" name="tearDown" is-config="true" duration-ms="48" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.api.TestSingleLogsStatusTests -->
+      <class name="com.aventstack.extentreports.api.TestAttributesTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.api.TestAttributesTests@2acf57e3]" name="setup" is-config="true" duration-ms="3" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyIfTestHasAddedAuthor(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestAttributesTests@2acf57e3]" name="verifyIfTestHasAddedAuthor" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestAttributesTests.verifyIfTestHasAddedAuthor(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasAddedAuthor -->
+        <test-method status="PASS" signature="verifyIfTestHasAddedAuthors(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestAttributesTests@2acf57e3]" name="verifyIfTestHasAddedAuthors" duration-ms="2" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestAttributesTests.verifyIfTestHasAddedAuthors(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasAddedAuthors -->
+        <test-method status="PASS" signature="verifyIfTestHasAddedCategories(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestAttributesTests@2acf57e3]" name="verifyIfTestHasAddedCategories" duration-ms="2" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestAttributesTests.verifyIfTestHasAddedCategories(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasAddedCategories -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.api.TestAttributesTests@2acf57e3]" name="tearDown" is-config="true" duration-ms="40" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="verifyIfTestHasAddedCategory(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestAttributesTests@2acf57e3]" name="verifyIfTestHasAddedCategory" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestAttributesTests.verifyIfTestHasAddedCategory(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasAddedCategory -->
+      </class> <!-- com.aventstack.extentreports.api.TestAttributesTests -->
+      <class name="com.aventstack.extentreports.api.TestStartEndDateTimeTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.api.TestStartEndDateTimeTests@4411d970]" name="setup" is-config="true" duration-ms="3" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyEndTime(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStartEndDateTimeTests@4411d970]" name="verifyEndTime" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStartEndDateTimeTests.verifyEndTime(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEndTime -->
+        <test-method status="PASS" signature="verifyEndTimeWithLogs(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStartEndDateTimeTests@4411d970]" name="verifyEndTimeWithLogs" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStartEndDateTimeTests.verifyEndTimeWithLogs(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEndTimeWithLogs -->
+        <test-method status="PASS" signature="verifyEndTimeWithManualSetting(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStartEndDateTimeTests@4411d970]" name="verifyEndTimeWithManualSetting" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStartEndDateTimeTests.verifyEndTimeWithManualSetting(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEndTimeWithManualSetting -->
+        <test-method status="PASS" signature="verifyStartTime(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStartEndDateTimeTests@4411d970]" name="verifyStartTime" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStartEndDateTimeTests.verifyStartTime(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStartTime -->
+        <test-method status="PASS" signature="verifyStartTimeWithLogs(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStartEndDateTimeTests@4411d970]" name="verifyStartTimeWithLogs" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStartEndDateTimeTests.verifyStartTimeWithLogs(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStartTimeWithLogs -->
+        <test-method status="PASS" signature="verifyTimeWithManualSetting(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStartEndDateTimeTests@4411d970]" name="verifyTimeWithManualSetting" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStartEndDateTimeTests.verifyTimeWithManualSetting(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTimeWithManualSetting -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.api.TestStartEndDateTimeTests@4411d970]" name="tearDown" is-config="true" duration-ms="45" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.api.TestStartEndDateTimeTests -->
+      <class name="com.aventstack.extentreports.api.TestMediaTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.api.TestMediaTests@3796751b]" name="setup" is-config="true" duration-ms="2" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyIfScreenCaptureAdded(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestMediaTests@3796751b]" name="verifyIfScreenCaptureAdded" duration-ms="2" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestMediaTests.verifyIfScreenCaptureAdded(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfScreenCaptureAdded -->
+        <test-method status="PASS" signature="verifyMultipleScreenCaptures(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestMediaTests@3796751b]" name="verifyMultipleScreenCaptures" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestMediaTests.verifyMultipleScreenCaptures(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMultipleScreenCaptures -->
+        <test-method status="PASS" signature="verifyScreenCaptureTitle(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestMediaTests@3796751b]" name="verifyScreenCaptureTitle" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestMediaTests.verifyScreenCaptureTitle(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScreenCaptureTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.api.TestMediaTests@3796751b]" name="tearDown" is-config="true" duration-ms="42" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.api.TestMediaTests -->
+      <class name="com.aventstack.extentreports.api.NodeAttributesTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.api.NodeAttributesTest@2812cbfa]" name="setup" is-config="true" duration-ms="3" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyIfNodeHasAddedCategory(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.NodeAttributesTest@2812cbfa]" name="verifyIfNodeHasAddedCategory" duration-ms="12" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.NodeAttributesTest.verifyIfNodeHasAddedCategory(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfNodeHasAddedCategory -->
+        <test-method status="PASS" signature="verifyIfTestHasAddedAuthor(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.NodeAttributesTest@2812cbfa]" name="verifyIfTestHasAddedAuthor" duration-ms="4" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.NodeAttributesTest.verifyIfTestHasAddedAuthor(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasAddedAuthor -->
+        <test-method status="PASS" signature="verifyIfTestHasAddedAuthors(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.NodeAttributesTest@2812cbfa]" name="verifyIfTestHasAddedAuthors" duration-ms="3" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.NodeAttributesTest.verifyIfTestHasAddedAuthors(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasAddedAuthors -->
+        <test-method status="PASS" signature="verifyIfTestHasAddedCategories(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.NodeAttributesTest@2812cbfa]" name="verifyIfTestHasAddedCategories" duration-ms="2" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.NodeAttributesTest.verifyIfTestHasAddedCategories(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfTestHasAddedCategories -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.api.NodeAttributesTest@2812cbfa]" name="tearDown" is-config="true" duration-ms="95" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.api.NodeAttributesTest -->
+      <class name="com.aventstack.extentreports.view.extenthtml.TestMarkupTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestMarkupTest@edf4efb]" name="setup" is-config="true" duration-ms="2" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestMarkupTest@edf4efb]" name="beforeClass" is-config="true" duration-ms="51" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="validatesIfBdd()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestMarkupTest@edf4efb]" name="validatesIfBdd" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesIfBdd -->
+        <test-method status="PASS" signature="validatesLogSizeView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestMarkupTest@edf4efb]" name="validatesLogSizeView" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesLogSizeView -->
+        <test-method status="PASS" signature="validatesLogStatusView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestMarkupTest@edf4efb]" name="validatesLogStatusView" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesLogStatusView -->
+        <test-method status="PASS" signature="validatesTestIDView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestMarkupTest@edf4efb]" name="validatesTestIDView" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesTestIDView -->
+        <test-method status="PASS" signature="validatesTestNameView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestMarkupTest@edf4efb]" name="validatesTestNameView" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesTestNameView -->
+        <test-method status="PASS" signature="validatesTestStatusView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestMarkupTest@edf4efb]" name="validatesTestStatusView" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesTestStatusView -->
+        <test-method status="PASS" signature="validatesTestsCountView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestMarkupTest@edf4efb]" name="validatesTestsCountView" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesTestsCountView -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestMarkupTest@edf4efb]" name="tearDown" is-config="true" duration-ms="38" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.view.extenthtml.TestMarkupTest -->
+      <class name="com.aventstack.extentreports.api.TestStatusHierarchyTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.api.TestStatusHierarchyTests@6442b0a6]" name="setup" is-config="true" duration-ms="3" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifFailHasHigherPriorityThanError(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStatusHierarchyTests@6442b0a6]" name="verifFailHasHigherPriorityThanError" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStatusHierarchyTests.verifFailHasHigherPriorityThanError(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifFailHasHigherPriorityThanError -->
+        <test-method status="PASS" signature="verifFatalHasHigherPriorityThanFail(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStatusHierarchyTests@6442b0a6]" name="verifFatalHasHigherPriorityThanFail" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStatusHierarchyTests.verifFatalHasHigherPriorityThanFail(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifFatalHasHigherPriorityThanFail -->
+        <test-method status="PASS" signature="verifyErrorHasHigherPriorityThanWarning(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStatusHierarchyTests@6442b0a6]" name="verifyErrorHasHigherPriorityThanWarning" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStatusHierarchyTests.verifyErrorHasHigherPriorityThanWarning(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorHasHigherPriorityThanWarning -->
+        <test-method status="PASS" signature="verifyPassHasHigherPriorityThanInfo(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStatusHierarchyTests@6442b0a6]" name="verifyPassHasHigherPriorityThanInfo" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStatusHierarchyTests.verifyPassHasHigherPriorityThanInfo(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPassHasHigherPriorityThanInfo -->
+        <test-method status="PASS" signature="verifySkipHasHigherPriorityThanPass(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStatusHierarchyTests@6442b0a6]" name="verifySkipHasHigherPriorityThanPass" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStatusHierarchyTests.verifySkipHasHigherPriorityThanPass(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySkipHasHigherPriorityThanPass -->
+        <test-method status="PASS" signature="verifyWarningHasHigherPriorityThanSkip(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestStatusHierarchyTests@6442b0a6]" name="verifyWarningHasHigherPriorityThanSkip" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestStatusHierarchyTests.verifyWarningHasHigherPriorityThanSkip(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWarningHasHigherPriorityThanSkip -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.api.TestStatusHierarchyTests@6442b0a6]" name="tearDown" is-config="true" duration-ms="35" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.api.TestStatusHierarchyTests -->
+      <class name="com.aventstack.extentreports.view.extenthtml.TestAttributesTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAttributesTest@7f690630]" name="setup" is-config="true" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="localSetup()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAttributesTest@7f690630]" name="localSetup" is-config="true" duration-ms="56" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localSetup -->
+        <test-method status="PASS" signature="validateCategoryName()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAttributesTest@7f690630]" name="validateCategoryName" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryName -->
+        <test-method status="PASS" signature="validateCategoryNameExistsInDashboardView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAttributesTest@7f690630]" name="validateCategoryNameExistsInDashboardView" duration-ms="2" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryNameExistsInDashboardView -->
+        <test-method status="PASS" signature="validateCategoryViewEnabled()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAttributesTest@7f690630]" name="validateCategoryViewEnabled" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryViewEnabled -->
+        <test-method status="PASS" signature="validateCategoryViewTestID()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAttributesTest@7f690630]" name="validateCategoryViewTestID" duration-ms="3" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryViewTestID -->
+        <test-method status="PASS" signature="validateCategoryViewTestName()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAttributesTest@7f690630]" name="validateCategoryViewTestName" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCategoryViewTestName -->
+        <test-method status="PASS" signature="validateIfCategoryViewHasCategory()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAttributesTest@7f690630]" name="validateIfCategoryViewHasCategory" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIfCategoryViewHasCategory -->
+        <test-method status="PASS" signature="validateIfCategoryViewHasCategoryWithCorrectName()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAttributesTest@7f690630]" name="validateIfCategoryViewHasCategoryWithCorrectName" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIfCategoryViewHasCategoryWithCorrectName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAttributesTest@7f690630]" name="tearDown" is-config="true" duration-ms="50" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.view.extenthtml.TestAttributesTest -->
+      <class name="com.aventstack.extentreports.api.BddAttributesTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.api.BddAttributesTest@2d6e8792]" name="setup" is-config="true" duration-ms="473" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="initialTestIsOfBddType(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.BddAttributesTest@2d6e8792]" name="initialTestIsOfBddType" duration-ms="5" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.BddAttributesTest.initialTestIsOfBddType(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialTestIsOfBddType -->
+        <test-method status="PASS" signature="testIsOfBddTypeWithBddChild(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.BddAttributesTest@2d6e8792]" name="testIsOfBddTypeWithBddChild" duration-ms="2" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.BddAttributesTest.testIsOfBddTypeWithBddChild(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsOfBddTypeWithBddChild -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.api.BddAttributesTest@2d6e8792]" name="tearDown" is-config="true" duration-ms="355" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.api.BddAttributesTest -->
+      <class name="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="setup" is-config="true" duration-ms="3" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="localSetup()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="localSetup" is-config="true" duration-ms="149" started-at="2017-08-26T15:32:05Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localSetup -->
+        <test-method status="PASS" signature="validatesIfBdd()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="validatesIfBdd" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesIfBdd -->
+        <test-method status="PASS" signature="validatesNodeIDView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="validatesNodeIDView" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesNodeIDView -->
+        <test-method status="PASS" signature="validatesNodeLogSizeView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="validatesNodeLogSizeView" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesNodeLogSizeView -->
+        <test-method status="PASS" signature="validatesNodeNameView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="validatesNodeNameView" duration-ms="2" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesNodeNameView -->
+        <test-method status="PASS" signature="validatesNodeStatusView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="validatesNodeStatusView" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesNodeStatusView -->
+        <test-method status="PASS" signature="validatesTestIDView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="validatesTestIDView" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesTestIDView -->
+        <test-method status="PASS" signature="validatesNodesCountView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="validatesNodesCountView" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesNodesCountView -->
+        <test-method status="PASS" signature="validatesTestLogSizeView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="validatesTestLogSizeView" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesTestLogSizeView -->
+        <test-method status="PASS" signature="validatesTestNameView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="validatesTestNameView" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesTestNameView -->
+        <test-method status="PASS" signature="validatesTestStatusView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="validatesTestStatusView" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesTestStatusView -->
+        <test-method status="PASS" signature="validatesTestsCountView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="validatesTestsCountView" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatesTestsCountView -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest@35f983a6]" name="tearDown" is-config="true" duration-ms="62" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest -->
+      <class name="com.aventstack.extentreports.view.extenthtml.TestWithoutLogsHasPassStatus">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestWithoutLogsHasPassStatus@2f7a2457]" name="setup" is-config="true" duration-ms="3" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="localSetup()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestWithoutLogsHasPassStatus@2f7a2457]" name="localSetup" is-config="true" duration-ms="37" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localSetup -->
+        <test-method status="PASS" signature="testShowsUnknownStatusIfNoLogsAreAddedView()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestWithoutLogsHasPassStatus@2f7a2457]" name="testShowsUnknownStatusIfNoLogsAreAddedView" duration-ms="4" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShowsUnknownStatusIfNoLogsAreAddedView -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.view.extenthtml.TestWithoutLogsHasPassStatus@2f7a2457]" name="tearDown" is-config="true" duration-ms="40" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.view.extenthtml.TestWithoutLogsHasPassStatus -->
+      <class name="com.aventstack.extentreports.api.TestInitializeNullValuesTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="setup" is-config="true" duration-ms="3" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="bddTestScenarioNameEmpty(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="bddTestScenarioNameEmpty" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestScenarioNameEmpty(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[nodeName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: nodeName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:133)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:195)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestScenarioNameEmpty(TestInitializeNullValuesTests.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bddTestScenarioNameEmpty -->
+        <test-method status="PASS" signature="bddTestScenarioNameEmptyGherkinKeyword(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="bddTestScenarioNameEmptyGherkinKeyword" duration-ms="2" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestScenarioNameEmptyGherkinKeyword(java.lang.reflect.Method) throws java.lang.ClassNotFoundException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[nodeName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: nodeName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:133)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:227)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:257)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestScenarioNameEmptyGherkinKeyword(TestInitializeNullValuesTests.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bddTestScenarioNameEmptyGherkinKeyword -->
+        <test-method status="PASS" signature="bddTestScenarioNameNull(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="bddTestScenarioNameNull" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestScenarioNameNull(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[nodeName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: nodeName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:133)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:195)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestScenarioNameNull(TestInitializeNullValuesTests.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bddTestScenarioNameNull -->
+        <test-method status="PASS" signature="bddTestScenarioNameNullGherkinKeyword(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="bddTestScenarioNameNullGherkinKeyword" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestScenarioNameNullGherkinKeyword(java.lang.reflect.Method) throws java.lang.ClassNotFoundException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[nodeName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: nodeName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:133)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:227)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:257)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestScenarioNameNullGherkinKeyword(TestInitializeNullValuesTests.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bddTestScenarioNameNullGherkinKeyword -->
+        <test-method status="PASS" signature="bddTestStepNameEmpty(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="bddTestStepNameEmpty" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestStepNameEmpty(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[nodeName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: nodeName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:133)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:195)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestStepNameEmpty(TestInitializeNullValuesTests.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bddTestStepNameEmpty -->
+        <test-method status="PASS" signature="bddTestStepNameEmptyGherkinKeyword(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="bddTestStepNameEmptyGherkinKeyword" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestStepNameEmptyGherkinKeyword(java.lang.reflect.Method) throws java.lang.ClassNotFoundException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[nodeName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: nodeName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:133)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:227)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:257)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestStepNameEmptyGherkinKeyword(TestInitializeNullValuesTests.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bddTestStepNameEmptyGherkinKeyword -->
+        <test-method status="PASS" signature="bddTestStepNameNullGherkinKeyword(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="bddTestStepNameNullGherkinKeyword" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestStepNameNullGherkinKeyword(java.lang.reflect.Method) throws java.lang.ClassNotFoundException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[nodeName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: nodeName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:133)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:227)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:257)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestStepNameNullGherkinKeyword(TestInitializeNullValuesTests.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bddTestStepNameNullGherkinKeyword -->
+        <test-method status="PASS" signature="bddTestStepNameNull(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="bddTestStepNameNull" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestStepNameNull(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[nodeName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: nodeName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:133)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:195)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.bddTestStepNameNull(TestInitializeNullValuesTests.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bddTestStepNameNull -->
+        <test-method status="PASS" signature="nodeDescriptionNull(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="nodeDescriptionNull" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.nodeDescriptionNull(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nodeDescriptionNull -->
+        <test-method status="PASS" signature="nodeNameEmpty(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="nodeNameEmpty" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.nodeNameEmpty(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[nodeName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: nodeName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:159)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:268)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.nodeNameEmpty(TestInitializeNullValuesTests.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nodeNameEmpty -->
+        <test-method status="PASS" signature="nodeNameNull(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="nodeNameNull" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.nodeNameNull(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[nodeName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: nodeName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:159)
+	at com.aventstack.extentreports.ExtentTest.createNode(ExtentTest.java:268)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.nodeNameNull(TestInitializeNullValuesTests.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nodeNameNull -->
+        <test-method status="PASS" signature="testDescriptionNull(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="testDescriptionNull" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestInitializeNullValuesTests.testDescriptionNull(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDescriptionNull -->
+        <test-method status="PASS" signature="testNameEmpty()[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="testNameEmpty" duration-ms="1" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[testName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: testName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.<init>(ExtentTest.java:80)
+	at com.aventstack.extentreports.ExtentTest.<init>(ExtentTest.java:100)
+	at com.aventstack.extentreports.ExtentReports.createTest(ExtentReports.java:227)
+	at com.aventstack.extentreports.ExtentReports.createTest(ExtentReports.java:243)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.testNameEmpty(TestInitializeNullValuesTests.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNameEmpty -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="tearDown" is-config="true" duration-ms="44" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testNameNull()[pri:0, instance:com.aventstack.extentreports.api.TestInitializeNullValuesTests@96532d6]" name="testNameNull" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[testName cannot be null or empty]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: testName cannot be null or empty
+	at com.aventstack.extentreports.ExtentTest.<init>(ExtentTest.java:80)
+	at com.aventstack.extentreports.ExtentTest.<init>(ExtentTest.java:100)
+	at com.aventstack.extentreports.ExtentReports.createTest(ExtentReports.java:227)
+	at com.aventstack.extentreports.ExtentReports.createTest(ExtentReports.java:243)
+	at com.aventstack.extentreports.api.TestInitializeNullValuesTests.testNameNull(TestInitializeNullValuesTests.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNameNull -->
+      </class> <!-- com.aventstack.extentreports.api.TestInitializeNullValuesTests -->
+      <class name="com.aventstack.extentreports.api.TestWithoutLogs">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.api.TestWithoutLogs@60f82f98]" name="setup" is-config="true" duration-ms="2" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyTestHasPassStatusIfNoLogsAdded(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestWithoutLogs@60f82f98]" name="verifyTestHasPassStatusIfNoLogsAdded" duration-ms="0" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestWithoutLogs.verifyTestHasPassStatusIfNoLogsAdded(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestHasPassStatusIfNoLogsAdded -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.api.TestWithoutLogs@60f82f98]" name="tearDown" is-config="true" duration-ms="46" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.api.TestWithoutLogs -->
+      <class name="com.aventstack.extentreports.api.TestIdsTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.aventstack.extentreports.api.TestIdsTests@506e6d5e]" name="setup" is-config="true" duration-ms="3" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyAllStartedTestsHaveUniqueIds(java.lang.reflect.Method)[pri:0, instance:com.aventstack.extentreports.api.TestIdsTests@506e6d5e]" name="verifyAllStartedTestsHaveUniqueIds" duration-ms="24" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.aventstack.extentreports.api.TestIdsTests.verifyAllStartedTestsHaveUniqueIds(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllStartedTestsHaveUniqueIds -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aventstack.extentreports.api.TestIdsTests@506e6d5e]" name="tearDown" is-config="true" duration-ms="94" started-at="2017-08-26T15:32:06Z" finished-at="2017-08-26T15:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.aventstack.extentreports.api.TestIdsTests -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

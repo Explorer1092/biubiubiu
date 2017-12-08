@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="74" failures="0" name="TestSuite" time="0.1" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shen/Documents/code/code-leare/extentreports-java"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shen/Documents/code/code-leare/extentreports-java"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/h_/ww3lhrn17g90fhymw3tb7hjc0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.5.0/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shen/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.5.0/libexec/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.5"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.5.0/libexec/lib/jansi-native/osx64"/>
+    <property name="http.nonProxyHosts" value="10.0.0.0/24|*.10.0.0.0/24|10.1.0.0/16|*.10.1.0.0/16|10.100.1.12/32|*.10.100.1.12/32|10.100.3.12/32|*.10.100.3.12/32|36.110.67.13/32|*.36.110.67.13/32|47.88.24.144/32|*.47.88.24.144/32|47.88.57.9/32|*.47.88.57.9/32|47.89.19.106/32|*.47.89.19.106/32|47.89.178.66/32|*.47.89.178.66/32|47.89.242.29/32|*.47.89.242.29/32|47.91.29.97/32|*.47.91.29.97/32|47.93.0.0/16|*.47.93.0.0/16|47.94.95.147/32|*.47.94.95.147/32|47.94.146.161/32|*.47.94.146.161/32|47.94.247.61/32|*.47.94.247.61/32|47.94.253.205/32|*.47.94.253.205/32|52.80.0.0/16|*.52.80.0.0/16|52.95.249.0/24|*.52.95.249.0/24|52.95.255.144/28|*.52.95.255.144/28|54.215.0.0/16|*.54.215.0.0/16|54.222.199.180/31|*.54.222.199.180/31|54.222.199.176/30|*.54.222.199.176/30|54.222.199.160/28|*.54.222.199.160/28|54.222.199.128/27|*.54.222.199.128/27|54.222.199.0/25|*.54.222.199.0/25|54.222.198.0/24|*.54.222.198.0/24|54.222.196.0/23|*.54.222.196.0/23|54.222.192.0/22|*.54.222.192.0/22|54.222.128.0/18|*.54.222.128.0/18|54.222.0.0/17|*.54.222.0.0/17|54.222.199.183/32|*.54.222.199.183/32|54.222.199.184/29|*.54.222.199.184/29|54.222.199.192/26|*.54.222.199.192/26|54.222.200.0/21|*.54.222.200.0/21|54.222.208.0/20|*.54.222.208.0/20|54.222.224.0/19|*.54.222.224.0/19|54.223.0.0/16|*.54.223.0.0/16|54.225.0.0/16|*.54.225.0.0/16|54.241.0.0/16|*.54.241.0.0/16|59.110.216.239/32|*.59.110.216.239/32|59.110.239.12/32|*.59.110.239.12/32|101.200.38.245/32|*.101.200.38.245/32|106.3.137.172/32|*.106.3.137.172/32|123.56.12.173/32|*.123.56.12.173/32|123.56.13.240/32|*.123.56.13.240/32|123.56.17.224/32|*.123.56.17.224/32|123.127.45.62/32|*.123.127.45.62/32|172.20.9.9/32|*.172.20.9.9/32|192.168.37.19/32|*.192.168.37.19/32|211.159.169.247/32|*.211.159.169.247/32"/>
+    <property name="user.home" value="/Users/shen"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Shen"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.5.0/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/Users/shen/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.5.0/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="10.0.0.0/24|*.10.0.0.0/24|10.1.0.0/16|*.10.1.0.0/16|10.100.1.12/32|*.10.100.1.12/32|10.100.3.12/32|*.10.100.3.12/32|36.110.67.13/32|*.36.110.67.13/32|47.88.24.144/32|*.47.88.24.144/32|47.88.57.9/32|*.47.88.57.9/32|47.89.19.106/32|*.47.89.19.106/32|47.89.178.66/32|*.47.89.178.66/32|47.89.242.29/32|*.47.89.242.29/32|47.91.29.97/32|*.47.91.29.97/32|47.93.0.0/16|*.47.93.0.0/16|47.94.95.147/32|*.47.94.95.147/32|47.94.146.161/32|*.47.94.146.161/32|47.94.247.61/32|*.47.94.247.61/32|47.94.253.205/32|*.47.94.253.205/32|52.80.0.0/16|*.52.80.0.0/16|52.95.249.0/24|*.52.95.249.0/24|52.95.255.144/28|*.52.95.255.144/28|54.215.0.0/16|*.54.215.0.0/16|54.222.199.180/31|*.54.222.199.180/31|54.222.199.176/30|*.54.222.199.176/30|54.222.199.160/28|*.54.222.199.160/28|54.222.199.128/27|*.54.222.199.128/27|54.222.199.0/25|*.54.222.199.0/25|54.222.198.0/24|*.54.222.198.0/24|54.222.196.0/23|*.54.222.196.0/23|54.222.192.0/22|*.54.222.192.0/22|54.222.128.0/18|*.54.222.128.0/18|54.222.0.0/17|*.54.222.0.0/17|54.222.199.183/32|*.54.222.199.183/32|54.222.199.184/29|*.54.222.199.184/29|54.222.199.192/26|*.54.222.199.192/26|54.222.200.0/21|*.54.222.200.0/21|54.222.208.0/20|*.54.222.208.0/20|54.222.224.0/19|*.54.222.224.0/19|54.223.0.0/16|*.54.223.0.0/16|54.225.0.0/16|*.54.225.0.0/16|54.241.0.0/16|*.54.241.0.0/16|59.110.216.239/32|*.59.110.216.239/32|59.110.239.12/32|*.59.110.239.12/32|101.200.38.245/32|*.101.200.38.245/32|106.3.137.172/32|*.106.3.137.172/32|123.56.12.173/32|*.123.56.12.173/32|123.56.13.240/32|*.123.56.13.240/32|123.56.17.224/32|*.123.56.17.224/32|123.127.45.62/32|*.123.127.45.62/32|172.20.9.9/32|*.172.20.9.9/32|192.168.37.19/32|*.192.168.37.19/32|211.159.169.247/32|*.211.159.169.247/32"/>
+    <property name="ftp.nonProxyHosts" value="10.0.0.0/24|*.10.0.0.0/24|10.1.0.0/16|*.10.1.0.0/16|10.100.1.12/32|*.10.100.1.12/32|10.100.3.12/32|*.10.100.3.12/32|36.110.67.13/32|*.36.110.67.13/32|47.88.24.144/32|*.47.88.24.144/32|47.88.57.9/32|*.47.88.57.9/32|47.89.19.106/32|*.47.89.19.106/32|47.89.178.66/32|*.47.89.178.66/32|47.89.242.29/32|*.47.89.242.29/32|47.91.29.97/32|*.47.91.29.97/32|47.93.0.0/16|*.47.93.0.0/16|47.94.95.147/32|*.47.94.95.147/32|47.94.146.161/32|*.47.94.146.161/32|47.94.247.61/32|*.47.94.247.61/32|47.94.253.205/32|*.47.94.253.205/32|52.80.0.0/16|*.52.80.0.0/16|52.95.249.0/24|*.52.95.249.0/24|52.95.255.144/28|*.52.95.255.144/28|54.215.0.0/16|*.54.215.0.0/16|54.222.199.180/31|*.54.222.199.180/31|54.222.199.176/30|*.54.222.199.176/30|54.222.199.160/28|*.54.222.199.160/28|54.222.199.128/27|*.54.222.199.128/27|54.222.199.0/25|*.54.222.199.0/25|54.222.198.0/24|*.54.222.198.0/24|54.222.196.0/23|*.54.222.196.0/23|54.222.192.0/22|*.54.222.192.0/22|54.222.128.0/18|*.54.222.128.0/18|54.222.0.0/17|*.54.222.0.0/17|54.222.199.183/32|*.54.222.199.183/32|54.222.199.184/29|*.54.222.199.184/29|54.222.199.192/26|*.54.222.199.192/26|54.222.200.0/21|*.54.222.200.0/21|54.222.208.0/20|*.54.222.208.0/20|54.222.224.0/19|*.54.222.224.0/19|54.223.0.0/16|*.54.223.0.0/16|54.225.0.0/16|*.54.225.0.0/16|54.241.0.0/16|*.54.241.0.0/16|59.110.216.239/32|*.59.110.216.239/32|59.110.239.12/32|*.59.110.239.12/32|101.200.38.245/32|*.101.200.38.245/32|106.3.137.172/32|*.106.3.137.172/32|123.56.12.173/32|*.123.56.12.173/32|123.56.13.240/32|*.123.56.13.240/32|123.56.17.224/32|*.123.56.17.224/32|123.127.45.62/32|*.123.127.45.62/32|172.20.9.9/32|*.172.20.9.9/32|192.168.37.19/32|*.192.168.37.19/32|211.159.169.247/32|*.211.159.169.247/32"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.aventstack.extentreports.api.BddAttributesTest" name="initialTestIsOfBddType" time="0.007"/>
+  <testcase classname="com.aventstack.extentreports.api.BddAttributesTest" name="testIsOfBddTypeWithBddChild" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.NodeAttributesTest" name="verifyIfNodeHasAddedCategory" time="0.012"/>
+  <testcase classname="com.aventstack.extentreports.api.NodeAttributesTest" name="verifyIfTestHasAddedAuthor" time="0.005"/>
+  <testcase classname="com.aventstack.extentreports.api.NodeAttributesTest" name="verifyIfTestHasAddedAuthors" time="0.003"/>
+  <testcase classname="com.aventstack.extentreports.api.NodeAttributesTest" name="verifyIfTestHasAddedCategories" time="0.002"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest" name="validatesIfBdd" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest" name="validatesNodeIDView" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest" name="validatesNodeLogSizeView" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest" name="validatesNodeNameView" time="0.002"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest" name="validatesNodeStatusView" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest" name="validatesNodesCountView" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest" name="validatesTestIDView" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest" name="validatesTestLogSizeView" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest" name="validatesTestNameView" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest" name="validatesTestStatusView" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest" name="validatesTestsCountView" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAttributesTest" name="validateCategoryName" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAttributesTest" name="validateCategoryNameExistsInDashboardView" time="0.002"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAttributesTest" name="validateCategoryViewEnabled" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAttributesTest" name="validateCategoryViewTestID" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAttributesTest" name="validateCategoryViewTestName" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAttributesTest" name="validateIfCategoryViewHasCategory" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestAttributesTest" name="validateIfCategoryViewHasCategoryWithCorrectName" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestAttributesTests" name="verifyIfTestHasAddedAuthor" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestAttributesTests" name="verifyIfTestHasAddedAuthors" time="0.002"/>
+  <testcase classname="com.aventstack.extentreports.api.TestAttributesTests" name="verifyIfTestHasAddedCategories" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestAttributesTests" name="verifyIfTestHasAddedCategory" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestIdsTests" name="verifyAllStartedTestsHaveUniqueIds" time="0.023"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="bddTestScenarioNameEmpty" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="bddTestScenarioNameEmptyGherkinKeyword" time="0.002"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="bddTestScenarioNameNull" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="bddTestScenarioNameNullGherkinKeyword" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="bddTestStepNameEmpty" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="bddTestStepNameEmptyGherkinKeyword" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="bddTestStepNameNull" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="bddTestStepNameNullGherkinKeyword" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="nodeDescriptionNull" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="nodeNameEmpty" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="nodeNameNull" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="testDescriptionNull" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="testNameEmpty" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestInitializeNullValuesTests" name="testNameNull" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestMarkupTest" name="validatesIfBdd" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestMarkupTest" name="validatesLogSizeView" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestMarkupTest" name="validatesLogStatusView" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestMarkupTest" name="validatesTestIDView" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestMarkupTest" name="validatesTestNameView" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestMarkupTest" name="validatesTestStatusView" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestMarkupTest" name="validatesTestsCountView" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestMediaTests" name="verifyIfScreenCaptureAdded" time="0.002"/>
+  <testcase classname="com.aventstack.extentreports.api.TestMediaTests" name="verifyMultipleScreenCaptures" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestMediaTests" name="verifyScreenCaptureTitle" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestSingleLogsStatusTests" name="verifyIfTestHasStatusError" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestSingleLogsStatusTests" name="verifyIfTestHasStatusFail" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestSingleLogsStatusTests" name="verifyIfTestHasStatusFatal" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestSingleLogsStatusTests" name="verifyIfTestHasStatusPass" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestSingleLogsStatusTests" name="verifyIfTestHasStatusPassWithOnlyInfoSingle" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestSingleLogsStatusTests" name="verifyIfTestHasStatusSkip" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestSingleLogsStatusTests" name="verifyIfTestHasStatusWarning" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStartEndDateTimeTests" name="verifyEndTime" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStartEndDateTimeTests" name="verifyEndTimeWithLogs" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStartEndDateTimeTests" name="verifyEndTimeWithManualSetting" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStartEndDateTimeTests" name="verifyStartTime" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStartEndDateTimeTests" name="verifyStartTimeWithLogs" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStartEndDateTimeTests" name="verifyTimeWithManualSetting" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStatusHierarchyTests" name="verifFailHasHigherPriorityThanError" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStatusHierarchyTests" name="verifFatalHasHigherPriorityThanFail" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStatusHierarchyTests" name="verifyErrorHasHigherPriorityThanWarning" time="0"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStatusHierarchyTests" name="verifyPassHasHigherPriorityThanInfo" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStatusHierarchyTests" name="verifySkipHasHigherPriorityThanPass" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestStatusHierarchyTests" name="verifyWarningHasHigherPriorityThanSkip" time="0.001"/>
+  <testcase classname="com.aventstack.extentreports.api.TestWithoutLogs" name="verifyTestHasPassStatusIfNoLogsAdded" time="0"/>
+  <testcase classname="com.aventstack.extentreports.view.extenthtml.TestWithoutLogsHasPassStatus" name="testShowsUnknownStatusIfNoLogsAreAddedView" time="0.004"/>
+</testsuite>

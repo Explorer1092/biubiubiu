@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="com.aventstack.extentreports.api.BddAttributesTest"/>
+      <class name="com.aventstack.extentreports.api.NodeAttributesTest"/>
+      <class name="com.aventstack.extentreports.api.TestAttributesTests"/>
+      <class name="com.aventstack.extentreports.api.TestIdsTests"/>
+      <class name="com.aventstack.extentreports.api.TestInitializeNullValuesTests"/>
+      <class name="com.aventstack.extentreports.api.TestMediaTests"/>
+      <class name="com.aventstack.extentreports.api.TestSingleLogsStatusTests"/>
+      <class name="com.aventstack.extentreports.api.TestStartEndDateTimeTests"/>
+      <class name="com.aventstack.extentreports.api.TestStatusHierarchyTests"/>
+      <class name="com.aventstack.extentreports.api.TestWithoutLogs"/>
+      <class name="com.aventstack.extentreports.view.extenthtml.TestAndNodeAttributesTest"/>
+      <class name="com.aventstack.extentreports.view.extenthtml.TestAttributesTest"/>
+      <class name="com.aventstack.extentreports.view.extenthtml.TestMarkupTest"/>
+      <class name="com.aventstack.extentreports.view.extenthtml.TestWithoutLogsHasPassStatus"/>
+    </classes>
+  </test> <!-- Command line test -->
+</suite> <!-- Failed suite [Command line suite] -->
