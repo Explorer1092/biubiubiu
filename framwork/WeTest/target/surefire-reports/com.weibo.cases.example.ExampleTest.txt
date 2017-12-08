@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.weibo.cases.example.ExampleTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec <<< FAILURE! - in com.weibo.cases.example.ExampleTest
+testExampleTwo(com.weibo.cases.example.ExampleTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: is "def"
+     but: was "abc"
+	at com.weibo.cases.example.ExampleTest.testExampleTwo(ExampleTest.java:28)
+
