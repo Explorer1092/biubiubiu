@@ -2,5 +2,12 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CS-Notes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Java-code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/advanced-java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/coding-interview" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/js-code/node-lessons" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/node-code/7-days-nodejs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/node-code/node-lessons" vcs="Git" />
   </component>
 </project>

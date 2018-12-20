@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.627 sec <<< FAILURE!
+testChangeJsonToMap(util.TestJsonDemo)  Time elapsed: 0.102 sec  <<< FAILURE!
+com.alibaba.fastjson.JSONException: not close json text, token : int
+	at com.alibaba.fastjson.parser.DefaultJSONParser.close(DefaultJSONParser.java:1482)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:156)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:162)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:131)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:223)
+	at util.JsonDemo.changeJsonToMap(JsonDemo.java:48)
+	at util.TestJsonDemo.testChangeJsonToMap(TestJsonDemo.java:39)
+
+testChangeStringToArray(util.TestJsonDemo)  Time elapsed: 0 sec  <<< FAILURE!
+com.alibaba.fastjson.JSONException: not close json text, token : error
+	at com.alibaba.fastjson.parser.DefaultJSONParser.close(DefaultJSONParser.java:1482)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:156)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:162)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:131)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:223)
+	at util.JsonDemo.changeStringArray(JsonDemo.java:33)
+	at util.TestJsonDemo.testChangeStringToArray(TestJsonDemo.java:51)
+
+testChangeStringToJson(util.TestJsonDemo)  Time elapsed: 0 sec  <<< FAILURE!
+com.alibaba.fastjson.JSONException: not close json text, token : error
+	at com.alibaba.fastjson.parser.DefaultJSONParser.close(DefaultJSONParser.java:1482)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:156)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:162)
+	at com.alibaba.fastjson.JSON.parse(JSON.java:131)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:223)
+	at util.JsonDemo.changeStringToJson(JsonDemo.java:23)
+	at util.TestJsonDemo.testChangeStringToJson(TestJsonDemo.java:45)
+

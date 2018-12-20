@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.sayabc.function:source-dynamic:speed-1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sayabc/function/source-dynamic/speed-1.0-SNAPSHOT/source-dynamic-speed-1.0-20180529.031727-5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sayabc/function/source-dynamic/speed-1.0-SNAPSHOT/source-dynamic-speed-1.0-20180529.031727-5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sayabc/function/source-dynamic/speed-1.0-SNAPSHOT/source-dynamic-speed-1.0-20180529.031727-5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

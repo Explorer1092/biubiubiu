@@ -1,0 +1,1196 @@
+1 a171e6f275541f6ddfcebb3261aeaab7ef22509a 1531714617660714000
+POST /login HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Content-Length: 29
+Cache-Control: max-age=0
+Origin: http://localhost:9090
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=A121A8F648E4F8EB5A5347A8076707ED
+
+username=speed&password=admin
+🐵🙈🙉
+1 d16fd7f9c880f337339f7639da2056ca3a3174c5 1531714618014376000
+GET / HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 c7592e066c2865010edd427cb9744e146eb9132d 1531714618219814000
+GET /plus/css/bootstrap.min14ed.css?v=3.3.6 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 d6398cb204152444c5c129d4517d39235721d8d7 1531714618234767000
+GET /plus/css/style.min862f.css?v=4.1.0 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 ba5c12c31f9dd95872864fe8f0603964dc4f7b3d 1531714618234927000
+GET /plus/css/plugins/sweetalert/sweetalert.css HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 16dd35530e75087a1f95abbc20158e887e1643ba 1531714618235444000
+GET /plus/js/jquery.min.js?v=2.1.4 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 4f729ff47d89228972bb455a25603e4d3b40d874 1531714618236547000
+GET /css/record.css?v3 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 a33eee884afc8715edb25aae563b733db09f5755 1531714618236703000
+GET /plus/js/bootstrap.min.js?v=3.3.6 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 0ce2a4145a0a42f1ddfa9e1fc5241d8cf102eeab 1531714618255890000
+GET /plus/js/plugins/metisMenu/jquery.metisMenu.js HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 789e6286c26f3952a7dcc9cf2b8e05937fc5d240 1531714618271424000
+GET /plus/js/plugins/slimscroll/jquery.slimscroll.min.js HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 a830660e810e7c8df12c1efbd7f2939c23c9888c 1531714618297200000
+GET /home HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 bc5f40c0cef616ae405dd03cc02c45448e8c9046 1531714618297408000
+GET /plus/js/plugins/layer/layer.min.js HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 7f79fb6afbc578c874139c9414d2ec2004c4b2ce 1531714618298525000
+GET /plus/js/hplus.min.js?v=4.1.0 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 2d459717bccf67f2215241c1e5162652af48fb67 1531714618298687000
+GET /plus/js/contabs.min.js HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 2615f6f570bae2a69e3085379844377ddf3853a0 1531714618298771000
+GET /plus/js/plugins/pace/pace.min.js HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 88b242d1848c4abc603ffdcf24eafc97402739bf 1531714618312731000
+GET /js/util.js?v2 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 3376976473da3feccf32bed3eda0347b6fcdaac0 1531714618314065000
+GET /plus/js/plugins/sweetalert/sweetalert.min.js HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 98499231cd0e5e8a6ff43cab0b68b645896a5562 1531714618314204000
+GET /js/index.js?v4 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 6c37e1dac2e626b666722a7673a9d3a52d534015 1531714618367907000
+GET /plus/fonts/fontawesome-webfont93e3.woff2?v=4.4.0 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Origin: http://localhost:9090
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/plus/css/font-awesome.min93e3.css?v=4.4.0
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 d2c4625c099aabb393db9eb788831dd660cd427d 1531714618470907000
+GET /plus/js/plugins/layer/skin/layer.css HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 39695dacbd6b0d457fa4ba1d23ac0f6e0e1a65b8 1531714618475366000
+GET /plus/js/plugins/layer/extend/layer.ext.js HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 60233096cc067e478df42d101e3e4261a6640dfe 1531714618601309000
+GET /plus/js/plugins/layer/skin/layer.ext.css HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 c23bb8dfd18b54c9d0cdef204b2ea223a4546ad4 1531714618616648000
+GET /plus/js/echarts4/echarts.min.js?v=4 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/home
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 7283934f10a136ca4d76d06bac8808a1af69145d 1531714618618778000
+GET /js/constant.js?v=23 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/home
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 10e527128e5a69d8c5c0068729646049f34c5fc4 1531714618621187000
+GET /js/home.js?v=23 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/home
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 3a5e22b0096226e5ac0be51960b6f750eb264586 1531714618812726000
+GET /plus/js/plugins/layer/skin/moon/style.css HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 3f27695895ba682cecd0ba1a3e613b7b03b272b3 1531714618914116000
+GET /speed/statstics/chart/7 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/home
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 50801846f47194419a0c7c8db2c2765976efbee6 1531714618914945000
+GET /speed/statstics/trend/7 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/home
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 2321e6e9e6dcbdfb2552666e9fce765ea6da1ecd 1531714621109103000
+GET /speed/stress/plan/list HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 0e92e298c3d2dcc1957ccb18974fa3e0540b8e0a 1531714621154060000
+GET /css/common.css?v=1 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/speed/stress/plan/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 cc12866a1f006d2d4a2b6f0a89a26ae3f5b8fe45 1531714621157879000
+GET /js/page.js?v205 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/stress/plan/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 2c06e62a0aa7269a0daea3b42a97980aed83a937 1531714621161592000
+GET /js/plan/list.js?v3 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/stress/plan/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 1383a946772999290aff26de4723beb471507d97 1531714621234494000
+GET /speed/stress/plan/search?pageIndex=1&pageSize=20& HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/speed/stress/plan/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 6a23a544136a9184af02f7ac3e48e1cc6fc3cec7 1531714621909607000
+GET /speed/stress/plan/toEdit HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 a97881a99f3ebe522d99da08a3f7d9be5ee4a5d3 1531714621997499000
+GET /css/common.css HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/speed/stress/plan/toEdit
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 4ad060ececa4bdc02c401e1ad6078205b77c9f71 1531714621998986000
+GET /css/edit.css HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/speed/stress/plan/toEdit
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 f539e3620ca31a7c717e33db0a09e446a5db2ff6 1531714622002101000
+GET /js/util.js?v5 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/stress/plan/toEdit
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 7bfccd4ed66b1716ec629cb91c5f6be90ca16e5c 1531714622005433000
+GET /js/plan/edit.js?v2 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/stress/plan/toEdit
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 9a9e8f5ff6aae827ef768b81986be21bdf97f29d 1531714622040668000
+GET /plus/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Origin: http://localhost:9090
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/plus/css/bootstrap.min14ed.css?v=3.3.6
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 96d2ec6f19a669129fb93916621c92ff8e5c80e1 1531714622707513000
+GET /speed/stress/file/list HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 484cd6d6dabd99363a342f61b7b9221309b5c869 1531714622754230000
+GET /js/file/list.js?v1 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/stress/file/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 2419810bcf02fab4db6c317a4f9d5be49e90dde2 1531714622815296000
+GET /speed/stress/file/search?pageIndex=1&pageSize=20& HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/speed/stress/file/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 4edbb44d6643bb0ca28684d550905232736b6dff 1531714623623278000
+GET /speed/stress/file/toEdit HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 97b4fdb425d35aec010e41ffe4e13249207af35d 1531714623668288000
+GET /js/file/edit.js?v1 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/stress/file/toEdit
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 075541687639b4359e7bc097436424b301ee716e 1531714624506394000
+GET /speed/stress/report/list HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 786e91b14bfb25e338be4eccf8655871da24b3f1 1531714624550434000
+GET /js/util.js?v4 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/stress/report/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 0053fe4da1be6cb928862eea17bea9bb61cf3cc7 1531714624553786000
+GET /js/report/list.js?v1 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/stress/report/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 36c58288c7b1258ab9bd0eb13b804cc6cbb7f84f 1531714624616136000
+GET /speed/stress/report/search?pageIndex=1&pageSize=20& HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/speed/stress/report/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 9b5ebaea176a3c86342563e96799779f1e37b9f3 1531714625447173000
+GET /caseInfo HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 7f7e207a700beb8676754ea463a9bfc5c336e7a7 1531714625486993000
+GET /css/reqInfo.css HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/caseInfo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 ec1cf86cb1314814d62e4209895d462d5530f62c 1531714625491069000
+GET /css/reset.css?v=1.42 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/caseInfo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 705f03dfd7ada832e7ecf9e2d1b54b8607592649 1531714625492450000
+GET /plus/js/jquery.min.js HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/caseInfo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 666783b936c9d5e42e861cf63483de1c0b35a410 1531714625496824000
+GET /plus/js/bootstrap.min.js HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/caseInfo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 870f7d6be0696c7d37c575fa59a2f8bd785cb515 1531714625503296000
+GET /js/api/reqInfo.js?v2 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/caseInfo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 5d92905b92971b324ba0c683f0332224077dafe7 1531714625587554000
+GET /selectCaseList HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/caseInfo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 74446466947fe269d984670876b920b4c81fdefc 1531714626609345000
+GET /addcase HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 2dd1a2593ab9852418290cb81063c91d3f4ad1bc 1531714626643284000
+GET /css/reset.css HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/addcase
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 54c6c21b6974eedbfccd3e48f6ea975b23a5bdcd 1531714626645793000
+GET /js/api/reqInfo.js HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/addcase
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 e6f8790ec27241661f1b98c996979eeb13359950 1531714627511303000
+GET /caseInfo HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 e6b770f6c34d824a19433feac3a472180641049c 1531714628169831000
+GET /testbuild HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 0d55f68f96ff4fe80dffd847b70911f511f25589 1531714628771541000
+GET /testreport HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 73b8225484f2e2c8c77310bb1aee6fa5bd0ea10c 1531714628803334000
+GET /js/util.js?v3 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/testreport
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 ff8f3e16f28aed8edd69e26b504c65e1dd777a35 1531714628805579000
+GET /js/api/selectReport.js?v1 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/testreport
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 43ea12c9b1b3796892334796b9f2018bbc419627 1531714628862695000
+GET /selectResult?userDatabase=master HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/testreport
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 d527dbd66c27b9976271a3f505f3bef026fa4982 1531714630287166000
+GET /selectCaseList HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/caseInfo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 7b117d5063960f999dcbe3ccdd9994b624ed702e 1531714630287398000
+GET /selectCaseList HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/addcase
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 01e1fd7542de6a10586494ef318ca618c2f416e6 1531714632733884000
+GET /speed/base/order/toSave HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 2357cff30be0d8a4f3304899393181a47ac3a287 1531714633710047000
+GET /speed/base/room/toSave HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 7441c4f88f00da6425c9fb31be295b4b04224449 1531714634857253000
+GET /speed/base/order/toSave HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 2e8e285b592c041aeab046f1f1ae7b8879bde0ae 1531714643960376000
+GET /speed/user/list HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 f1870958654c5197e2568fefea5a355a1abb7872 1531714644013037000
+GET /css/common.css?v2 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/css,*/*;q=0.1
+Referer: http://localhost:9090/speed/user/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 dfd85b7682b9aec84896e2582f5b2f2259f3bc35 1531714644017465000
+GET /js/user/list.js?v205 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/user/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 b3989b8738cd94d78514ce20ff7bd5c4c8a7be6b 1531714644056471000
+GET /speed/user/search?pageIndex=1&pageSize=20& HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/speed/user/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 e69affcb402e783daeecadd44d916709522c3930 1531714648627839000
+GET /speed/user/toEdit HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 301981557d2583ff25de398df9e3b01f610a0fce 1531714648672323000
+GET /js/user/edit.js?v33 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/user/toEdit
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 655cf217eabd28832ae7496ea835b6e4e06b43ef 1531714650068107000
+GET /speed/role/list HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 693fcb30e6096251c1e579f2eb4188c0fa095d28 1531714650107980000
+GET /js/role/list.js?v205 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/role/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 80a78e122850b795825805b3558d2576d9ab6d1e 1531714650146528000
+GET /speed/role/search?pageIndex=1&pageSize=20& HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/speed/role/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 55f02b7a62511d37e4dde01a69e9f7360b923dd5 1531714652418962000
+GET /speed/role/toEdit HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 54b3eac6fabf31c84cde5b9c9321ffd035813f99 1531714652453637000
+GET /js/role/edit.js?v33 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/role/toEdit
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 be73cfa368c7984d0eb71f1cf8be3ee81e245b1a 1531714653082247000
+GET /speed/permission/list HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 2a96daa1d839b35d6dbf34c36fa4905b3435ab2c 1531714653113557000
+GET /js/permission/list.js?v2 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/permission/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉
+1 e8ce913c830340c219d56bafacd7582720ec67c4 1531714653171887000
+GET /speed/permission/search?pageIndex=1&pageSize=20& HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Accept: */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Referer: http://localhost:9090/speed/permission/list
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 0343115b612a4626034aa518f80eca0b700ca9a2 1531714653769513000
+GET /speed/permission/toEdit HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9090/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+
+
+🐵🙈🙉
+1 d9fe1c32e81ca23fef6e952fe13727c47aa9a6c1 1531714653809683000
+GET /js/permission/edit.js?v1 HTTP/1.1
+Host: localhost:9090
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+Accept: */*
+Referer: http://localhost:9090/speed/permission/toEdit
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6
+Cookie: SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined; JSESSIONID=690FE1E64CEE53A5C5AF17EA30643EF0
+If-Modified-Since: Fri, 06 Jul 2018 06:58:44 GMT
+
+
+🐵🙈🙉

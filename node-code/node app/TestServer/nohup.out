@@ -1,0 +1,185 @@
+[0mGET / [36m304 [0m395.331 ms - -[0m
+[0mGET / [36m304 [0m130.706 ms - -[0m
+[0mGET / [36m304 [0m102.305 ms - -[0m
+[0mGET / [36m304 [0m159.808 ms - -[0m
+[0mGET / [36m304 [0m106.931 ms - -[0m
+[0mGET / [32m200 [0m37.866 ms - 2059[0m
+[0mGET /favicon.ico [33m404 [0m12.254 ms - 1337[0m
+[0mGET / [36m304 [0m39.059 ms - -[0m
+[0mGET / [36m304 [0m27.588 ms - -[0m
+[0mGET / [36m304 [0m22.632 ms - -[0m
+[0mGET / [32m200 [0m22.080 ms - 2059[0m
+[0mGET /favicon.ico [33m404 [0m9.815 ms - 1337[0m
+[0mGET /favicon.ico [33m404 [0m6.186 ms - 1337[0m
+[0mGET / [32m200 [0m32.310 ms - 2059[0m
+[0mGET /favicon.ico [33m404 [0m12.630 ms - 1337[0m
+[0mGET / [36m304 [0m35.005 ms - -[0m
+[0mGET / [32m200 [0m23.492 ms - 2059[0m
+[0mGET /favicon.ico [33m404 [0m8.187 ms - 1337[0m
+[0mGET / [32m200 [0m25.562 ms - 2059[0m
+[0mGET /favicon.ico [33m404 [0m7.502 ms - 1337[0m
+[0mGET / [32m200 [0m20.324 ms - 2059[0m
+[0mGET /favicon.ico [33m404 [0m8.740 ms - 1337[0m
+[0mGET / [36m304 [0m20.722 ms - -[0m
+[0mGET / [36m304 [0m29.505 ms - -[0m
+[0mGET / [32m200 [0m21.425 ms - 2059[0m
+[0mGET /favicon.ico [33m404 [0m19.427 ms - 1337[0m
+[0mGET / [32m200 [0m29.978 ms - 2059[0m
+[0mGET /favicon.ico [33m404 [0m8.647 ms - 1337[0m
+[0mGET / [32m200 [0m52.120 ms - 2059[0m
+[0mGET /favicon.ico [33m404 [0m9.698 ms - 1337[0m
+[0mGET / [36m304 [0m22.889 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m8.207 ms - 1337[0m
+[0mGET / [36m304 [0m23.902 ms - -[0m
+[0mGET / [36m304 [0m22.022 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m9.192 ms - 1337[0m
+[0mGET / [36m304 [0m18.275 ms - -[0m
+[0mGET / [36m304 [0m40.661 ms - -[0m
+[0mGET / [36m304 [0m7.837 ms - -[0m
+[0mGET / [32m200 [0m4.547 ms - 5222[0m
+[0mGET /favicon.ico [33m404 [0m5.625 ms - 1359[0m
+Error: Failed to lookup view "error" in views directory "/Users/shen/workspace/app/TestServer/views"
+    at Function.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/response.js:971:7)
+    at /Users/shen/workspace/app/TestServer/app.js:50:7
+    at Layer.handle_error (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:315:13)
+    at /Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:275:10)
+    at /Users/shen/workspace/app/TestServer/app.js:39:3
+    at Layer.handle [as handle_request] (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:95:5)
+events.js:182
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE 192.168.19.107:8888
+    at Object.exports._errnoException (util.js:1016:11)
+    at exports._exceptionWithHostPort (util.js:1039:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1307:14)
+    at listenInCluster (net.js:1355:12)
+    at doListen (net.js:1481:7)
+    at _combinedTickCallback (internal/process/next_tick.js:105:11)
+    at process._tickCallback (internal/process/next_tick.js:161:9)
+    at Function.Module.runMain (module.js:607:11)
+    at startup (bootstrap_node.js:158:16)
+    at bootstrap_node.js:575:3
+[0mGET / [32m200 [0m7.259 ms - 5222[0m
+[0mGET / [36m304 [0m7.245 ms - -[0m
+[0mGET / [36m304 [0m2.103 ms - -[0m
+[0mGET / [36m304 [0m1.464 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m5.907 ms - 1359[0m
+Error: Failed to lookup view "error" in views directory "/Users/shen/workspace/app/TestServer/views"
+    at Function.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/response.js:971:7)
+    at /Users/shen/workspace/app/TestServer/app.js:50:7
+    at Layer.handle_error (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:315:13)
+    at /Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:275:10)
+    at /Users/shen/workspace/app/TestServer/app.js:39:3
+    at Layer.handle [as handle_request] (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:95:5)
+[0mGET / [36m304 [0m8.470 ms - -[0m
+[0mGET / [32m200 [0m2.842 ms - 5222[0m
+[0mGET /favicon.ico [33m404 [0m0.759 ms - 1359[0m
+Error: Failed to lookup view "error" in views directory "/Users/shen/workspace/app/TestServer/views"
+    at Function.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/response.js:971:7)
+    at /Users/shen/workspace/app/TestServer/app.js:50:7
+    at Layer.handle_error (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:315:13)
+    at /Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:275:10)
+    at /Users/shen/workspace/app/TestServer/app.js:39:3
+    at Layer.handle [as handle_request] (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:95:5)
+[0mGET / [36m304 [0m1.846 ms - -[0m
+[0mGET / [36m304 [0m0.975 ms - -[0m
+[0mGET / [32m200 [0m1.465 ms - 5222[0m
+[0mGET /favicon.ico [33m404 [0m0.591 ms - 1359[0m
+Error: Failed to lookup view "error" in views directory "/Users/shen/workspace/app/TestServer/views"
+    at Function.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/response.js:971:7)
+    at /Users/shen/workspace/app/TestServer/app.js:50:7
+    at Layer.handle_error (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:315:13)
+    at /Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:275:10)
+    at /Users/shen/workspace/app/TestServer/app.js:39:3
+    at Layer.handle [as handle_request] (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:95:5)
+[0mGET / [36m304 [0m3.462 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.156 ms - 1359[0m
+Error: Failed to lookup view "error" in views directory "/Users/shen/workspace/app/TestServer/views"
+    at Function.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/response.js:971:7)
+    at /Users/shen/workspace/app/TestServer/app.js:50:7
+    at Layer.handle_error (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:315:13)
+    at /Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:275:10)
+    at /Users/shen/workspace/app/TestServer/app.js:39:3
+    at Layer.handle [as handle_request] (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:95:5)
+[0mGET / [32m200 [0m3.796 ms - 5222[0m
+[0mGET /favicon.ico [33m404 [0m2.088 ms - 1359[0m
+Error: Failed to lookup view "error" in views directory "/Users/shen/workspace/app/TestServer/views"
+    at Function.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/response.js:971:7)
+    at /Users/shen/workspace/app/TestServer/app.js:50:7
+    at Layer.handle_error (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:315:13)
+    at /Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:275:10)
+    at /Users/shen/workspace/app/TestServer/app.js:39:3
+    at Layer.handle [as handle_request] (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:95:5)
+events.js:182
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRNOTAVAIL 192.168.19.107:8888
+    at Object.exports._errnoException (util.js:1016:11)
+    at exports._exceptionWithHostPort (util.js:1039:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1290:19)
+    at listenInCluster (net.js:1355:12)
+    at doListen (net.js:1481:7)
+    at _combinedTickCallback (internal/process/next_tick.js:105:11)
+    at process._tickCallback (internal/process/next_tick.js:161:9)
+    at Function.Module.runMain (module.js:607:11)
+    at startup (bootstrap_node.js:158:16)
+    at bootstrap_node.js:575:3
+[0mGET / [32m200 [0m10.342 ms - 5222[0m
+[0mGET /favicon.ico [33m404 [0m4.144 ms - 1359[0m
+Error: Failed to lookup view "error" in views directory "/Users/shen/workspace/app/TestServer/views"
+    at Function.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/response.js:971:7)
+    at /Users/shen/workspace/app/TestServer/app.js:50:7
+    at Layer.handle_error (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:315:13)
+    at /Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:275:10)
+    at /Users/shen/workspace/app/TestServer/app.js:39:3
+    at Layer.handle [as handle_request] (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:95:5)
+[0mGET / [32m200 [0m7.466 ms - 5677[0m
+[0mGET /favicon.ico [33m404 [0m3.564 ms - 1359[0m
+Error: Failed to lookup view "error" in views directory "/Users/shen/workspace/app/TestServer/views"
+    at Function.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/shen/workspace/app/TestServer/node_modules/express/lib/response.js:971:7)
+    at /Users/shen/workspace/app/TestServer/app.js:50:7
+    at Layer.handle_error (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:315:13)
+    at /Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/index.js:275:10)
+    at /Users/shen/workspace/app/TestServer/app.js:39:3
+    at Layer.handle [as handle_request] (/Users/shen/workspace/app/TestServer/node_modules/express/lib/router/layer.js:95:5)
+[0mGET / [36m304 [0m1.326 ms - -[0m
+[0mGET / [36m304 [0m0.727 ms - -[0m
+[0mGET / [32m200 [0m1.252 ms - 5693[0m
+[0mGET / [32m200 [0m1.305 ms - 5696[0m
+[0mGET / [32m200 [0m0.977 ms - 5693[0m
+[0mGET / [36m304 [0m6.501 ms - -[0m
+[0mGET / [32m200 [0m2.280 ms - 5692[0m

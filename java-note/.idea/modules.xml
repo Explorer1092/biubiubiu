@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java-note.iml" filepath="$PROJECT_DIR$/java-note.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../workspace/speed/speed.iml" filepath="$PROJECT_DIR$/../../../workspace/speed/speed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../workspace/speed/speed-service-api/speed-service-api.iml" filepath="$PROJECT_DIR$/../../../workspace/speed/speed-service-api/speed-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../workspace/speed/speed-service-provider/speed-service-provider.iml" filepath="$PROJECT_DIR$/../../../workspace/speed/speed-service-provider/speed-service-provider.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,2677 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+		<link href='http://extentreports.com/resx/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>小班课接口测试报告</title>
+
+	<style type='text/css'>
+		.node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}  .card-panel.environment  th:first-child{ width:30%;}
+	</style>
+</head>
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>小班课接口测试报告</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+				<span class='label suite-start-time'>Jun 26, 2017 9:28:12 PM</span>
+			</a>
+			<a href='#!'>
+				<span class='label'>v3.0.3</span>
+			</a>
+		</ul>
+	</div>
+</nav>
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>接口自动化测试</a></li>
+					<li><a href='#'>CourseController</a></li>
+					<li><a href='#'>learning-progress-controller</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span><span class='strong'>26</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong'>0</span> test(s) failed, <span class='strong'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span><span class='strong'>26</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong'>0</span> step(s) failed, <span class='strong'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h3>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Course Controller</span>
+						<span class='test-time'>Jun 26, 2017 9:28:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 26, 2017 9:28:12 PM</span>
+	<span class='label end-time'>Jun 26, 2017 9:28:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+104ms</span>
+</div>
+	<div class='test-desc'>Pass: 12 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>接口自动化测试</span>
+				<span class='category label white-text'>CourseController</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获取课程信息,method:get,url:/api/v1/courses,param:</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:13 PM</span>
+						<span class='node-duration'>0h 0m 4s+417ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/courses</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:[{"id":1,"parentId":0,"type":0,"cnName":"国家地理主修课","enName":"OW","sequence":0,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"sn":"OW","children":[{"id":2,"parentId":1,"type":1,"cnName":"","enName":"","sequence":0,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"sn":"OW-L0","children":[{"id":3,"parentId":2,"type":2,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"sn":"OW-L0-U1","children":[{"id":4,"parentId":3,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"sn":"OW-L0-U1-L1","children":[]},{"id":5,"parentId":3,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"sn":"OW-L0-U1-L2","children":[]},{"id":6,"parentId":3,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"sn":"OW-L0-U1-L3","children":[]},{"id":7,"parentId":3,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"sn":"OW-L0-U1-L4","children":[]},{"id":8,"parentId":3,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"sn":"OW-L0-U1-L5","children":[]},{"id":9,"parentId":3,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"sn":"OW-L0-U1-L6","children":[]},{"id":10,"parentId":3,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"sn":"OW-L0-U1-L7","children":[]},{"id":11,"parentId":3,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"sn":"OW-L0-U1-L8","children":[]},{"id":12,"parentId":3,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"sn":"OW-L0-U1-L9","children":[]}]}]},{"id":13,"parentId":1,"type":1,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"sn":"OW-L1","children":[{"id":14,"parentId":13,"type":2,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"sn":"OW-L1-U1","children":[{"id":23,"parentId":14,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U1-L1","children":[]},{"id":24,"parentId":14,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U1-L2","children":[]},{"id":25,"parentId":14,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U1-L3","children":[]},{"id":26,"parentId":14,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U1-L4","children":[]},{"id":27,"parentId":14,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U1-L5","children":[]},{"id":28,"parentId":14,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U1-L6","children":[]},{"id":29,"parentId":14,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U1-L7","children":[]},{"id":30,"parentId":14,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U1-L8","children":[]},{"id":31,"parentId":14,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U1-L9","children":[]}]},{"id":15,"parentId":13,"type":2,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"sn":"OW-L1-U2","children":[{"id":32,"parentId":15,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U2-L1","children":[]},{"id":33,"parentId":15,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U2-L2","children":[]},{"id":34,"parentId":15,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U2-L3","children":[]},{"id":35,"parentId":15,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U2-L4","children":[]},{"id":36,"parentId":15,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U2-L5","children":[]},{"id":37,"parentId":15,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U2-L6","children":[]},{"id":38,"parentId":15,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U2-L7","children":[]},{"id":39,"parentId":15,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U2-L8","children":[]},{"id":40,"parentId":15,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U2-L9","children":[]}]},{"id":16,"parentId":13,"type":2,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"sn":"OW-L1-U3","children":[{"id":41,"parentId":16,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U3-L1","children":[]},{"id":42,"parentId":16,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U3-L2","children":[]},{"id":43,"parentId":16,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U3-L3","children":[]},{"id":44,"parentId":16,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U3-L4","children":[]},{"id":45,"parentId":16,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U3-L5","children":[]},{"id":46,"parentId":16,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U3-L6","children":[]},{"id":47,"parentId":16,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U3-L7","children":[]},{"id":48,"parentId":16,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U3-L8","children":[]},{"id":49,"parentId":16,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U3-L9","children":[]}]},{"id":17,"parentId":13,"type":2,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"sn":"OW-L1-U4","children":[{"id":50,"parentId":17,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U4-L1","children":[]},{"id":51,"parentId":17,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U4-L2","children":[]},{"id":52,"parentId":17,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U4-L3","children":[]},{"id":53,"parentId":17,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U4-L4","children":[]},{"id":54,"parentId":17,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U4-L5","children":[]},{"id":55,"parentId":17,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U4-L6","children":[]},{"id":56,"parentId":17,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U4-L7","children":[]},{"id":57,"parentId":17,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U4-L8","children":[]},{"id":58,"parentId":17,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U4-L9","children":[]}]},{"id":18,"parentId":13,"type":2,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"sn":"OW-L1-U5","children":[{"id":59,"parentId":18,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"sn":"OW-L1-U5-L1","children":[]},{"id":60,"parentId":18,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U5-L2","children":[]},{"id":61,"parentId":18,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U5-L3","children":[]},{"id":62,"parentId":18,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U5-L4","children":[]},{"id":63,"parentId":18,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U5-L5","children":[]},{"id":64,"parentId":18,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U5-L6","children":[]},{"id":65,"parentId":18,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U5-L7","children":[]},{"id":66,"parentId":18,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U5-L8","children":[]},{"id":67,"parentId":18,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U5-L9","children":[]}]},{"id":19,"parentId":13,"type":2,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"sn":"OW-L1-U6","children":[{"id":68,"parentId":19,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U6-L1","children":[]},{"id":69,"parentId":19,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U6-L2","children":[]},{"id":70,"parentId":19,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U6-L3","children":[]},{"id":71,"parentId":19,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U6-L4","children":[]},{"id":72,"parentId":19,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U6-L5","children":[]},{"id":73,"parentId":19,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U6-L6","children":[]},{"id":74,"parentId":19,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U6-L7","children":[]},{"id":75,"parentId":19,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U6-L8","children":[]},{"id":76,"parentId":19,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U6-L9","children":[]}]},{"id":20,"parentId":13,"type":2,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U7","children":[{"id":77,"parentId":20,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U7-L1","children":[]},{"id":78,"parentId":20,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U7-L2","children":[]},{"id":79,"parentId":20,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251575000,"createTime":1497251575000,"sn":"OW-L1-U7-L3","children":[]},{"id":80,"parentId":20,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U7-L4","children":[]},{"id":81,"parentId":20,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U7-L5","children":[]},{"id":82,"parentId":20,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U7-L6","children":[]},{"id":83,"parentId":20,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U7-L7","children":[]},{"id":84,"parentId":20,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U7-L8","children":[]},{"id":85,"parentId":20,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U7-L9","children":[]}]},{"id":21,"parentId":13,"type":2,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U8","children":[{"id":86,"parentId":21,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U8-L1","children":[]},{"id":87,"parentId":21,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U8-L2","children":[]},{"id":88,"parentId":21,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U8-L3","children":[]},{"id":89,"parentId":21,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U8-L4","children":[]},{"id":90,"parentId":21,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U8-L5","children":[]},{"id":91,"parentId":21,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U8-L6","children":[]},{"id":92,"parentId":21,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U8-L7","children":[]},{"id":93,"parentId":21,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U8-L8","children":[]},{"id":94,"parentId":21,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U8-L9","children":[]}]},{"id":22,"parentId":13,"type":2,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251560000,"createTime":1497251560000,"sn":"OW-L1-U9","children":[{"id":95,"parentId":22,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U9-L1","children":[]},{"id":96,"parentId":22,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U9-L2","children":[]},{"id":97,"parentId":22,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U9-L3","children":[]},{"id":98,"parentId":22,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U9-L4","children":[]},{"id":99,"parentId":22,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"sn":"OW-L1-U9-L5","children":[]},{"id":100,"parentId":22,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L1-U9-L6","children":[]},{"id":101,"parentId":22,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L1-U9-L7","children":[]},{"id":102,"parentId":22,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L1-U9-L8","children":[]},{"id":103,"parentId":22,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L1-U9-L9","children":[]}]}]},{"id":104,"parentId":1,"type":1,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2","children":[{"id":105,"parentId":104,"type":2,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U1","children":[{"id":114,"parentId":105,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U1-L1","children":[]},{"id":115,"parentId":105,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U1-L2","children":[]},{"id":116,"parentId":105,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U1-L3","children":[]},{"id":117,"parentId":105,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U1-L4","children":[]},{"id":118,"parentId":105,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U1-L5","children":[]},{"id":119,"parentId":105,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U1-L6","children":[]},{"id":120,"parentId":105,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U1-L7","children":[]},{"id":121,"parentId":105,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U1-L8","children":[]},{"id":122,"parentId":105,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U1-L9","children":[]}]},{"id":106,"parentId":104,"type":2,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U2","children":[{"id":123,"parentId":106,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U2-L1","children":[]},{"id":124,"parentId":106,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U2-L2","children":[]},{"id":125,"parentId":106,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U2-L3","children":[]},{"id":126,"parentId":106,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U2-L4","children":[]},{"id":127,"parentId":106,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U2-L5","children":[]},{"id":128,"parentId":106,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U2-L6","children":[]},{"id":129,"parentId":106,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U2-L7","children":[]},{"id":130,"parentId":106,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U2-L8","children":[]},{"id":131,"parentId":106,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U2-L9","children":[]}]},{"id":107,"parentId":104,"type":2,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U3","children":[{"id":132,"parentId":107,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U3-L1","children":[]},{"id":133,"parentId":107,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U3-L2","children":[]},{"id":134,"parentId":107,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U3-L3","children":[]},{"id":135,"parentId":107,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U3-L4","children":[]},{"id":136,"parentId":107,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U3-L5","children":[]},{"id":137,"parentId":107,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U3-L6","children":[]},{"id":138,"parentId":107,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U3-L7","children":[]},{"id":139,"parentId":107,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U3-L8","children":[]},{"id":140,"parentId":107,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U3-L9","children":[]}]},{"id":108,"parentId":104,"type":2,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U4","children":[{"id":141,"parentId":108,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U4-L1","children":[]},{"id":142,"parentId":108,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U4-L2","children":[]},{"id":143,"parentId":108,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U4-L3","children":[]},{"id":144,"parentId":108,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U4-L4","children":[]},{"id":145,"parentId":108,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U4-L5","children":[]},{"id":146,"parentId":108,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U4-L6","children":[]},{"id":147,"parentId":108,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U4-L7","children":[]},{"id":148,"parentId":108,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U4-L8","children":[]},{"id":149,"parentId":108,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U4-L9","children":[]}]},{"id":109,"parentId":104,"type":2,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U5","children":[{"id":150,"parentId":109,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U5-L1","children":[]},{"id":151,"parentId":109,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U5-L2","children":[]},{"id":152,"parentId":109,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U5-L3","children":[]},{"id":153,"parentId":109,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U5-L4","children":[]},{"id":154,"parentId":109,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U5-L5","children":[]},{"id":155,"parentId":109,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U5-L6","children":[]},{"id":156,"parentId":109,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U5-L7","children":[]},{"id":157,"parentId":109,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U5-L8","children":[]},{"id":158,"parentId":109,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U5-L9","children":[]}]},{"id":110,"parentId":104,"type":2,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U6","children":[{"id":159,"parentId":110,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251598000,"createTime":1497251598000,"sn":"OW-L2-U6-L1","children":[]},{"id":160,"parentId":110,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U6-L2","children":[]},{"id":161,"parentId":110,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U6-L3","children":[]},{"id":162,"parentId":110,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U6-L4","children":[]},{"id":163,"parentId":110,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U6-L5","children":[]},{"id":164,"parentId":110,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U6-L6","children":[]},{"id":165,"parentId":110,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U6-L7","children":[]},{"id":166,"parentId":110,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U6-L8","children":[]},{"id":167,"parentId":110,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U6-L9","children":[]}]},{"id":111,"parentId":104,"type":2,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U7","children":[{"id":168,"parentId":111,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U7-L1","children":[]},{"id":169,"parentId":111,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U7-L2","children":[]},{"id":170,"parentId":111,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U7-L3","children":[]},{"id":171,"parentId":111,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U7-L4","children":[]},{"id":172,"parentId":111,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U7-L5","children":[]},{"id":173,"parentId":111,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U7-L6","children":[]},{"id":174,"parentId":111,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U7-L7","children":[]},{"id":175,"parentId":111,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U7-L8","children":[]},{"id":176,"parentId":111,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U7-L9","children":[]}]},{"id":112,"parentId":104,"type":2,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U8","children":[{"id":177,"parentId":112,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U8-L1","children":[]},{"id":178,"parentId":112,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U8-L2","children":[]},{"id":179,"parentId":112,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U8-L3","children":[]},{"id":180,"parentId":112,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U8-L4","children":[]},{"id":181,"parentId":112,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U8-L5","children":[]},{"id":182,"parentId":112,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U8-L6","children":[]},{"id":183,"parentId":112,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251605000,"createTime":1497251605000,"sn":"OW-L2-U8-L7","children":[]},{"id":184,"parentId":112,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251606000,"createTime":1497251606000,"sn":"OW-L2-U8-L8","children":[]},{"id":185,"parentId":112,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251606000,"createTime":1497251606000,"sn":"OW-L2-U8-L9","children":[]}]},{"id":113,"parentId":104,"type":2,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"sn":"OW-L2-U9","children":[{"id":186,"parentId":113,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251606000,"createTime":1497251606000,"sn":"OW-L2-U9-L1","children":[]},{"id":187,"parentId":113,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251606000,"createTime":1497251606000,"sn":"OW-L2-U9-L2","children":[]},{"id":188,"parentId":113,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251606000,"createTime":1497251606000,"sn":"OW-L2-U9-L3","children":[]},{"id":189,"parentId":113,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251606000,"createTime":1497251606000,"sn":"OW-L2-U9-L4","children":[]},{"id":190,"parentId":113,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L2-U9-L5","children":[]},{"id":191,"parentId":113,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L2-U9-L6","children":[]},{"id":192,"parentId":113,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L2-U9-L7","children":[]},{"id":193,"parentId":113,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L2-U9-L8","children":[]},{"id":194,"parentId":113,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L2-U9-L9","children":[]}]}]},{"id":195,"parentId":1,"type":1,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3","children":[{"id":196,"parentId":195,"type":2,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U1","children":[{"id":205,"parentId":196,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U1-L1","children":[]},{"id":206,"parentId":196,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U1-L2","children":[]},{"id":207,"parentId":196,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U1-L3","children":[]},{"id":208,"parentId":196,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U1-L4","children":[]},{"id":209,"parentId":196,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U1-L5","children":[]},{"id":210,"parentId":196,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U1-L6","children":[]},{"id":211,"parentId":196,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U1-L7","children":[]},{"id":212,"parentId":196,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U1-L8","children":[]},{"id":213,"parentId":196,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U1-L9","children":[]}]},{"id":197,"parentId":195,"type":2,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U2","children":[{"id":214,"parentId":197,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U2-L1","children":[]},{"id":215,"parentId":197,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U2-L2","children":[]},{"id":216,"parentId":197,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U2-L3","children":[]},{"id":217,"parentId":197,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U2-L4","children":[]},{"id":218,"parentId":197,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U2-L5","children":[]},{"id":219,"parentId":197,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U2-L6","children":[]},{"id":220,"parentId":197,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U2-L7","children":[]},{"id":221,"parentId":197,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U2-L8","children":[]},{"id":222,"parentId":197,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U2-L9","children":[]}]},{"id":198,"parentId":195,"type":2,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U3","children":[{"id":223,"parentId":198,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U3-L1","children":[]},{"id":224,"parentId":198,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U3-L2","children":[]},{"id":225,"parentId":198,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U3-L3","children":[]},{"id":226,"parentId":198,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U3-L4","children":[]},{"id":227,"parentId":198,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U3-L5","children":[]},{"id":228,"parentId":198,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U3-L6","children":[]},{"id":229,"parentId":198,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U3-L7","children":[]},{"id":230,"parentId":198,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U3-L8","children":[]},{"id":231,"parentId":198,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U3-L9","children":[]}]},{"id":199,"parentId":195,"type":2,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U4","children":[{"id":232,"parentId":199,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U4-L1","children":[]},{"id":233,"parentId":199,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U4-L2","children":[]},{"id":234,"parentId":199,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U4-L3","children":[]},{"id":235,"parentId":199,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U4-L4","children":[]},{"id":236,"parentId":199,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U4-L5","children":[]},{"id":237,"parentId":199,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U4-L6","children":[]},{"id":238,"parentId":199,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U4-L7","children":[]},{"id":239,"parentId":199,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U4-L8","children":[]},{"id":240,"parentId":199,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U4-L9","children":[]}]},{"id":200,"parentId":195,"type":2,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U5","children":[{"id":241,"parentId":200,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U5-L1","children":[]},{"id":242,"parentId":200,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U5-L2","children":[]},{"id":243,"parentId":200,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U5-L3","children":[]},{"id":244,"parentId":200,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U5-L4","children":[]},{"id":245,"parentId":200,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U5-L5","children":[]},{"id":246,"parentId":200,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U5-L6","children":[]},{"id":247,"parentId":200,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U5-L7","children":[]},{"id":248,"parentId":200,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U5-L8","children":[]},{"id":249,"parentId":200,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U5-L9","children":[]}]},{"id":201,"parentId":195,"type":2,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U6","children":[{"id":250,"parentId":201,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U6-L1","children":[]},{"id":251,"parentId":201,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251621000,"createTime":1497251621000,"sn":"OW-L3-U6-L2","children":[]},{"id":252,"parentId":201,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251660000,"createTime":1497251660000,"sn":"OW-L3-U6-L3","children":[]},{"id":253,"parentId":201,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251660000,"createTime":1497251660000,"sn":"OW-L3-U6-L4","children":[]},{"id":254,"parentId":201,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251660000,"createTime":1497251660000,"sn":"OW-L3-U6-L5","children":[]},{"id":255,"parentId":201,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251660000,"createTime":1497251660000,"sn":"OW-L3-U6-L6","children":[]},{"id":256,"parentId":201,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251660000,"createTime":1497251660000,"sn":"OW-L3-U6-L7","children":[]},{"id":257,"parentId":201,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251660000,"createTime":1497251660000,"sn":"OW-L3-U6-L8","children":[]},{"id":258,"parentId":201,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251660000,"createTime":1497251660000,"sn":"OW-L3-U6-L9","children":[]}]},{"id":202,"parentId":195,"type":2,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U7","children":[{"id":259,"parentId":202,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251660000,"createTime":1497251660000,"sn":"OW-L3-U7-L1","children":[]},{"id":260,"parentId":202,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U7-L2","children":[]},{"id":261,"parentId":202,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U7-L3","children":[]},{"id":262,"parentId":202,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U7-L4","children":[]},{"id":263,"parentId":202,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U7-L5","children":[]},{"id":264,"parentId":202,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U7-L6","children":[]},{"id":265,"parentId":202,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U7-L7","children":[]},{"id":266,"parentId":202,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U7-L8","children":[]},{"id":267,"parentId":202,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U7-L9","children":[]}]},{"id":203,"parentId":195,"type":2,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U8","children":[{"id":268,"parentId":203,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U8-L1","children":[]},{"id":269,"parentId":203,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U8-L2","children":[]},{"id":270,"parentId":203,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U8-L3","children":[]},{"id":271,"parentId":203,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U8-L4","children":[]},{"id":272,"parentId":203,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U8-L5","children":[]},{"id":273,"parentId":203,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U8-L6","children":[]},{"id":274,"parentId":203,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U8-L7","children":[]},{"id":275,"parentId":203,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U8-L8","children":[]},{"id":276,"parentId":203,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U8-L9","children":[]}]},{"id":204,"parentId":195,"type":2,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"sn":"OW-L3-U9","children":[{"id":277,"parentId":204,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U9-L1","children":[]},{"id":278,"parentId":204,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U9-L2","children":[]},{"id":279,"parentId":204,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U9-L3","children":[]},{"id":280,"parentId":204,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1497251673000,"createTime":1497251673000,"sn":"OW-L3-U9-L4","children":[]},{"id":281,"parentId":204,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1497251674000,"createTime":1497251674000,"sn":"OW-L3-U9-L5","children":[]},{"id":282,"parentId":204,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1497251674000,"createTime":1497251674000,"sn":"OW-L3-U9-L6","children":[]},{"id":283,"parentId":204,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1497251674000,"createTime":1497251674000,"sn":"OW-L3-U9-L7","children":[]},{"id":284,"parentId":204,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1497251674000,"createTime":1497251674000,"sn":"OW-L3-U9-L8","children":[]},{"id":285,"parentId":204,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1497251674000,"createTime":1497251674000,"sn":"OW-L3-U9-L9","children":[]}]}]},{"id":10000,"parentId":1,"type":1,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1498471224000,"createTime":1498471224000,"sn":"OW-L3","children":[{"id":10001,"parentId":10000,"type":2,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1498471313000,"createTime":1498471313000,"sn":"OW-L3-U1","children":[{"id":10010,"parentId":10001,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1498471377000,"createTime":1498471377000,"sn":"OW-L3-U1-L1","children":[]},{"id":10011,"parentId":10001,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1498471379000,"createTime":1498471379000,"sn":"OW-L3-U1-L2","children":[]},{"id":10012,"parentId":10001,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1498471382000,"createTime":1498471382000,"sn":"OW-L3-U1-L3","children":[]},{"id":10013,"parentId":10001,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1498471385000,"createTime":1498471385000,"sn":"OW-L3-U1-L4","children":[]},{"id":10014,"parentId":10001,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1498471387000,"createTime":1498471387000,"sn":"OW-L3-U1-L5","children":[]},{"id":10015,"parentId":10001,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1498471390000,"createTime":1498471390000,"sn":"OW-L3-U1-L6","children":[]},{"id":10016,"parentId":10001,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1498471393000,"createTime":1498471393000,"sn":"OW-L3-U1-L7","children":[]},{"id":10017,"parentId":10001,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1498471401000,"createTime":1498471401000,"sn":"OW-L3-U1-L8","children":[]},{"id":10018,"parentId":10001,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1498471405000,"createTime":1498471405000,"sn":"OW-L3-U1-L9","children":[]}]},{"id":10002,"parentId":10000,"type":2,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1498471318000,"createTime":1498471318000,"sn":"OW-L3-U2","children":[{"id":10019,"parentId":10002,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1498471412000,"createTime":1498471412000,"sn":"OW-L3-U2-L1","children":[]},{"id":10020,"parentId":10002,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1498471414000,"createTime":1498471414000,"sn":"OW-L3-U2-L2","children":[]},{"id":10021,"parentId":10002,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1498471417000,"createTime":1498471417000,"sn":"OW-L3-U2-L3","children":[]},{"id":10022,"parentId":10002,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1498471420000,"createTime":1498471420000,"sn":"OW-L3-U2-L4","children":[]},{"id":10023,"parentId":10002,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1498471423000,"createTime":1498471423000,"sn":"OW-L3-U2-L5","children":[]},{"id":10024,"parentId":10002,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1498471434000,"createTime":1498471434000,"sn":"OW-L3-U2-L6","children":[]},{"id":10025,"parentId":10002,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1498471442000,"createTime":1498471442000,"sn":"OW-L3-U2-L7","children":[]},{"id":10026,"parentId":10002,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1498471446000,"createTime":1498471446000,"sn":"OW-L3-U2-L8","children":[]},{"id":10027,"parentId":10002,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1498471449000,"createTime":1498471449000,"sn":"OW-L3-U2-L9","children":[]}]},{"id":10003,"parentId":10000,"type":2,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1498471324000,"createTime":1498471324000,"sn":"OW-L3-U3","children":[{"id":10028,"parentId":10003,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1498471457000,"createTime":1498471457000,"sn":"OW-L3-U3-L1","children":[]},{"id":10029,"parentId":10003,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1498471459000,"createTime":1498471459000,"sn":"OW-L3-U3-L2","children":[]},{"id":10030,"parentId":10003,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1498471462000,"createTime":1498471462000,"sn":"OW-L3-U3-L3","children":[]},{"id":10031,"parentId":10003,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1498471506000,"createTime":1498471506000,"sn":"OW-L3-U3-L4","children":[]},{"id":10032,"parentId":10003,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1498471508000,"createTime":1498471508000,"sn":"OW-L3-U3-L5","children":[]},{"id":10033,"parentId":10003,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1498471512000,"createTime":1498471512000,"sn":"OW-L3-U3-L6","children":[]},{"id":10034,"parentId":10003,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1498471514000,"createTime":1498471514000,"sn":"OW-L3-U3-L7","children":[]},{"id":10035,"parentId":10003,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1498471518000,"createTime":1498471518000,"sn":"OW-L3-U3-L8","children":[]},{"id":10036,"parentId":10003,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1498471521000,"createTime":1498471521000,"sn":"OW-L3-U3-L9","children":[]}]},{"id":10004,"parentId":10000,"type":2,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1498471327000,"createTime":1498471327000,"sn":"OW-L3-U4","children":[{"id":10037,"parentId":10004,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1498471528000,"createTime":1498471528000,"sn":"OW-L3-U4-L1","children":[]},{"id":10038,"parentId":10004,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1498471530000,"createTime":1498471530000,"sn":"OW-L3-U4-L2","children":[]},{"id":10039,"parentId":10004,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1498471533000,"createTime":1498471533000,"sn":"OW-L3-U4-L3","children":[]},{"id":10040,"parentId":10004,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1498471535000,"createTime":1498471535000,"sn":"OW-L3-U4-L4","children":[]},{"id":10041,"parentId":10004,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1498471543000,"createTime":1498471543000,"sn":"OW-L3-U4-L5","children":[]},{"id":10042,"parentId":10004,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1498471546000,"createTime":1498471546000,"sn":"OW-L3-U4-L6","children":[]},{"id":10043,"parentId":10004,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1498471548000,"createTime":1498471548000,"sn":"OW-L3-U4-L7","children":[]},{"id":10044,"parentId":10004,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1498471552000,"createTime":1498471552000,"sn":"OW-L3-U4-L8","children":[]},{"id":10045,"parentId":10004,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1498471555000,"createTime":1498471555000,"sn":"OW-L3-U4-L9","children":[]}]},{"id":10005,"parentId":10000,"type":2,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1498471330000,"createTime":1498471330000,"sn":"OW-L3-U5","children":[{"id":10046,"parentId":10005,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1498471578000,"createTime":1498471578000,"sn":"OW-L3-U5-L1","children":[]},{"id":10047,"parentId":10005,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1498471581000,"createTime":1498471581000,"sn":"OW-L3-U5-L2","children":[]},{"id":10048,"parentId":10005,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1498471583000,"createTime":1498471583000,"sn":"OW-L3-U5-L3","children":[]},{"id":10049,"parentId":10005,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1498471586000,"createTime":1498471586000,"sn":"OW-L3-U5-L4","children":[]},{"id":10050,"parentId":10005,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1498471588000,"createTime":1498471588000,"sn":"OW-L3-U5-L5","children":[]},{"id":10051,"parentId":10005,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1498471592000,"createTime":1498471592000,"sn":"OW-L3-U5-L6","children":[]},{"id":10052,"parentId":10005,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1498471599000,"createTime":1498471599000,"sn":"OW-L3-U5-L7","children":[]},{"id":10053,"parentId":10005,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1498471602000,"createTime":1498471602000,"sn":"OW-L3-U5-L8","children":[]},{"id":10054,"parentId":10005,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1498471605000,"createTime":1498471605000,"sn":"OW-L3-U5-L9","children":[]}]},{"id":10006,"parentId":10000,"type":2,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1498471333000,"createTime":1498471333000,"sn":"OW-L3-U6","children":[{"id":10055,"parentId":10006,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1498471618000,"createTime":1498471618000,"sn":"OW-L3-U6-L1","children":[]},{"id":10056,"parentId":10006,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1498471621000,"createTime":1498471621000,"sn":"OW-L3-U6-L2","children":[]},{"id":10057,"parentId":10006,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1498471624000,"createTime":1498471624000,"sn":"OW-L3-U6-L3","children":[]},{"id":10058,"parentId":10006,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1498471631000,"createTime":1498471631000,"sn":"OW-L3-U6-L4","children":[]},{"id":10059,"parentId":10006,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1498471634000,"createTime":1498471634000,"sn":"OW-L3-U6-L5","children":[]},{"id":10060,"parentId":10006,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1498471636000,"createTime":1498471636000,"sn":"OW-L3-U6-L6","children":[]},{"id":10061,"parentId":10006,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1498471638000,"createTime":1498471638000,"sn":"OW-L3-U6-L7","children":[]},{"id":10062,"parentId":10006,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1498471642000,"createTime":1498471642000,"sn":"OW-L3-U6-L8","children":[]},{"id":10063,"parentId":10006,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1498471644000,"createTime":1498471644000,"sn":"OW-L3-U6-L9","children":[]}]},{"id":10007,"parentId":10000,"type":2,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1498471335000,"createTime":1498471335000,"sn":"OW-L3-U7","children":[{"id":10072,"parentId":10007,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1498471675000,"createTime":1498471675000,"sn":"OW-L3-U7-L1","children":[]},{"id":10071,"parentId":10007,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1498471673000,"createTime":1498471673000,"sn":"OW-L3-U7-L2","children":[]},{"id":10070,"parentId":10007,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1498471671000,"createTime":1498471671000,"sn":"OW-L3-U7-L3","children":[]},{"id":10069,"parentId":10007,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1498471669000,"createTime":1498471669000,"sn":"OW-L3-U7-L4","children":[]},{"id":10068,"parentId":10007,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1498471667000,"createTime":1498471667000,"sn":"OW-L3-U7-L5","children":[]},{"id":10067,"parentId":10007,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1498471665000,"createTime":1498471665000,"sn":"OW-L3-U7-L6","children":[]},{"id":10066,"parentId":10007,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1498471661000,"createTime":1498471661000,"sn":"OW-L3-U7-L7","children":[]},{"id":10065,"parentId":10007,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1498471658000,"createTime":1498471658000,"sn":"OW-L3-U7-L8","children":[]},{"id":10064,"parentId":10007,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1498471650000,"createTime":1498471650000,"sn":"OW-L3-U7-L9","children":[]}]},{"id":10008,"parentId":10000,"type":2,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1498471338000,"createTime":1498471338000,"sn":"OW-L3-U8","children":[{"id":10073,"parentId":10008,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1498471679000,"createTime":1498471679000,"sn":"OW-L3-U8-L1","children":[]},{"id":10074,"parentId":10008,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1498471682000,"createTime":1498471682000,"sn":"OW-L3-U8-L2","children":[]},{"id":10075,"parentId":10008,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1498471683000,"createTime":1498471683000,"sn":"OW-L3-U8-L3","children":[]},{"id":10076,"parentId":10008,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1498471685000,"createTime":1498471685000,"sn":"OW-L3-U8-L4","children":[]},{"id":10077,"parentId":10008,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1498471687000,"createTime":1498471687000,"sn":"OW-L3-U8-L5","children":[]},{"id":10078,"parentId":10008,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1498471689000,"createTime":1498471689000,"sn":"OW-L3-U8-L6","children":[]},{"id":10079,"parentId":10008,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1498471691000,"createTime":1498471691000,"sn":"OW-L3-U8-L7","children":[]},{"id":10080,"parentId":10008,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1498471694000,"createTime":1498471694000,"sn":"OW-L3-U8-L8","children":[]},{"id":10081,"parentId":10008,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1498471696000,"createTime":1498471696000,"sn":"OW-L3-U8-L9","children":[]}]},{"id":10009,"parentId":10000,"type":2,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1498471342000,"createTime":1498471342000,"sn":"OW-L3-U9","children":[{"id":10082,"parentId":10009,"type":3,"cnName":"","enName":"","sequence":1,"status":0,"updateTime":1498471700000,"createTime":1498471700000,"sn":"OW-L3-U9-L1","children":[]},{"id":10083,"parentId":10009,"type":3,"cnName":"","enName":"","sequence":2,"status":0,"updateTime":1498471702000,"createTime":1498471702000,"sn":"OW-L3-U9-L2","children":[]},{"id":10084,"parentId":10009,"type":3,"cnName":"","enName":"","sequence":3,"status":0,"updateTime":1498471703000,"createTime":1498471703000,"sn":"OW-L3-U9-L3","children":[]},{"id":10085,"parentId":10009,"type":3,"cnName":"","enName":"","sequence":4,"status":0,"updateTime":1498471707000,"createTime":1498471707000,"sn":"OW-L3-U9-L4","children":[]},{"id":10086,"parentId":10009,"type":3,"cnName":"","enName":"","sequence":5,"status":0,"updateTime":1498471709000,"createTime":1498471709000,"sn":"OW-L3-U9-L5","children":[]},{"id":10087,"parentId":10009,"type":3,"cnName":"","enName":"","sequence":6,"status":0,"updateTime":1498471713000,"createTime":1498471713000,"sn":"OW-L3-U9-L6","children":[]},{"id":10088,"parentId":10009,"type":3,"cnName":"","enName":"","sequence":7,"status":0,"updateTime":1498471716000,"createTime":1498471716000,"sn":"OW-L3-U9-L7","children":[]},{"id":10089,"parentId":10009,"type":3,"cnName":"","enName":"","sequence":8,"status":0,"updateTime":1498471717000,"createTime":1498471717000,"sn":"OW-L3-U9-L8","children":[]},{"id":10090,"parentId":10009,"type":3,"cnName":"","enName":"","sequence":9,"status":0,"updateTime":1498471720000,"createTime":1498471720000,"sn":"OW-L3-U9-L9","children":[]}]}]}]}]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.id&gt;1;$.cnName=[国家地理主修课]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值[国家地理主修课]=[国家地理主修课]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   id值为：[1].</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='3'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获得下一节lesson信息,method:get,url:/api/v1/lesson/...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:14 PM</span>
+						<span class='node-duration'>0h 0m 4s+67ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/lesson/6/next</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"id":7,"parentId":3,"type":3,"cnName":"","enName":"","sn":"OW-L0-U1-L4","sequence":4,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"extra":{}}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.id=7;$.status=0</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值7=7</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值0=0</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   id值为：7.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获得下一节level信息,method:get,url:/api/v1/level/2/...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:14 PM</span>
+						<span class='node-duration'>0h 0m 3s+916ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/level/2/next</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"id":13,"parentId":1,"type":1,"cnName":"","enName":"","sn":"OW-L1","sequence":1,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"extra":{}}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.parentId=1;$.type=1</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值1=1</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值1=1</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='5'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获取课程属性,method:get,url:/api/v1/node/${ids},pa...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:14 PM</span>
+						<span class='node-duration'>0h 0m 3s+752ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储ids参数，值为：45。</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/node/45</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"id":45,"parentId":16,"type":3,"cnName":"","enName":"","sn":"OW-L1-U3-L5","sequence":5,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"extra":{"key":"QSJ4","value":"YJSr"}}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.id=45;$.status=0</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值45=45</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值0=0</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   cnName值为：.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获取子课程信息,method:get,url:/api/v1/node/1/childr...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:14 PM</span>
+						<span class='node-duration'>0h 0m 3s+592ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/node/1/children</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:[{"id":2,"parentId":1,"type":1,"cnName":"","enName":"","sn":"OW-L0","sequence":0,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"extra":{}},{"id":13,"parentId":1,"type":1,"cnName":"","enName":"","sn":"OW-L1","sequence":1,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"extra":{}},{"id":104,"parentId":1,"type":1,"cnName":"","enName":"","sn":"OW-L2","sequence":2,"status":0,"updateTime":1497251588000,"createTime":1497251588000,"extra":{}},{"id":195,"parentId":1,"type":1,"cnName":"","enName":"","sn":"OW-L3","sequence":3,"status":0,"updateTime":1497251613000,"createTime":1497251613000,"extra":{}},{"id":10000,"parentId":1,"type":1,"cnName":"","enName":"","sn":"OW-L3","sequence":3,"status":0,"updateTime":1498471224000,"createTime":1498471224000,"extra":{}}]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.size()&gt;1</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   子课程长度值为：5.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='7'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:删除课程属性,method:delete,url:/api/v1/node/${rmid...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:15 PM</span>
+						<span class='node-duration'>0h 0m 2s+925ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储rmid参数，值为：56。</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:delete</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/node/56/props</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"status":"ok","message":""}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.status=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值ok=ok</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:验证删除课程属性,method:get,url:/api/v1/node/${rmid}...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:15 PM</span>
+						<span class='node-duration'>0h 0m 2s+891ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/node/56</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"id":56,"parentId":17,"type":3,"cnName":"","enName":"","sn":"OW-L1-U4-L7","sequence":7,"status":0,"updateTime":1497251568000,"createTime":1497251568000,"extra":{}}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.extra={}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值{}={}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   删除后课程属性值为：{}.</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   验证删除的id值为：56.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='9'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:新增课程属性,method:post,url:/api/v1/node/${id}/pr...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:15 PM</span>
+						<span class='node-duration'>0h 0m 2s+739ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储id参数，值为：98。</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储key参数，值为：xAiW。</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储value参数，值为：XPlQ。</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:post</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/node/98/props</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:{"key":"xAiW","value":"XPlQ"}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"status":"ok","message":""}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.status=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值ok=ok</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='10'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:验证新增课程属性,method:get,url:/api/v1/node/${id},p...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:15 PM</span>
+						<span class='node-duration'>0h 0m 2s+567ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/node/98</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"id":98,"parentId":22,"type":3,"cnName":"","enName":"","sn":"OW-L1-U9-L4","sequence":4,"status":0,"updateTime":1497251581000,"createTime":1497251581000,"extra":{"key":"xAiW","value":"XPlQ"}}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.extra.key=xAiW;$.extra.value=XPlQ</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值xAiW=xAiW</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值XPlQ=XPlQ</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='11'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获取课程列表,method:get,url:/api/v1/nodes/${ids}/l...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:15 PM</span>
+						<span class='node-duration'>0h 0m 2s+414ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/nodes/45/list</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:[45]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.size() &gt;1</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   课程包列表值为：1.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='12'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获取所有根节点信息,method:get,url:/api/v1/roots,param:</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:15 PM</span>
+						<span class='node-duration'>0h 0m 2s+404ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/roots</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:[{"id":1,"parentId":0,"type":0,"cnName":"国家地理主修课","enName":"OW","sn":"OW","sequence":0,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"extra":{"key":"tel","value":"111"}}]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.extra.key=[tel];$.id=[1]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值[tel]=[tel]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值[1]=[1]</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='13'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获得下一节unit信息,method:get,url:/api/v1/unit/3/ne...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:15 PM</span>
+						<span class='node-duration'>0h 0m 2s+259ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>CourseController</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/unit/3/next</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"id":14,"parentId":13,"type":2,"cnName":"","enName":"","sn":"OW-L1-U1","sequence":1,"status":0,"updateTime":1497251544000,"createTime":1497251544000,"extra":{}}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.status=0</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值0=0</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   id值为：14.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>learning-progress-controller</span>
+						<span class='test-time'>Jun 26, 2017 9:28:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 26, 2017 9:28:16 PM</span>
+	<span class='label end-time'>Jun 26, 2017 9:28:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+812ms</span>
+</div>
+	<div class='test-desc'>Pass: 14 ; Fail: 0 ; Skip: 0 ; </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>接口自动化测试</span>
+				<span class='category label white-text'>learning-progress-controller</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='15'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获取班级的Learning Progress,method:get,url:/api/v...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:16 PM</span>
+						<span class='node-duration'>0h 0m 2s+25ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/class/10000</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:[{"objectId":10000,"objectType":3,"courseId":1,"currentLessonId":6,"currentLesson":{"id":6,"parentId":3,"type":3,"cnName":"","enName":"","sn":"OW-L0-U1-L3","sequence":3,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"extra":{}},"nextLesson":{"id":7,"parentId":3,"type":3,"cnName":"","enName":"","sn":"OW-L0-U1-L4","sequence":4,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"extra":{}},"createTime":1498038594000,"updateTime":1498038608000}]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.objectId[0]=10000</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值10000=10000</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   list值为：10000.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='16'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:设置班级Learning Progress,method:post,url:/api/v...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:16 PM</span>
+						<span class='node-duration'>0h 0m 1s+697ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储object_id参数，值为：70。</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:post</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/class/70</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:{"courseId":1,"currentLessonId":6}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"status":"ok","message":""}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.status=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值ok=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   创建状态值为：ok.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='17'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:验证设置班级Learning Progress,method:get,url:/api/...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:16 PM</span>
+						<span class='node-duration'>0h 0m 1s+320ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/class/70</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:[{"objectId":70,"objectType":3,"courseId":1,"currentLessonId":6,"currentLesson":{"id":6,"parentId":3,"type":3,"cnName":"","enName":"","sn":"OW-L0-U1-L3","sequence":3,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"extra":{}},"nextLesson":{"id":7,"parentId":3,"type":3,"cnName":"","enName":"","sn":"OW-L0-U1-L4","sequence":4,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"extra":{}},"createTime":1498483682000,"updateTime":1498483682000}]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.objectId[0]=70</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值70=70</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   验证创建的班级id值为：70.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='18'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:新增class课程记录,method:post,url:/api/v1/learning...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:17 PM</span>
+						<span class='node-duration'>0h 0m 1s+24ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储roomid参数，值为：23。</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:post</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/class/10000/logging</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:{  "classRoomEndTime": 1498535338000,  "classRoomStartTime": 1498448938000,  "classroomId": 23,  "createTime": 1498448938000,  "lessonId": 6,  "sn": "string"}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"status":"ok","message":""}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.status=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值ok=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   创建的状态值为：ok.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='19'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:搜索class课程记录,method:post,url:/api/v1/learning...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:17 PM</span>
+						<span class='node-duration'>0h 0m 1s+6ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:post</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/logging/classes/search</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:{"classroomid":1}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"total":17,"data":[{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"86","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"72","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498189738000","ClassRoomEndTime":"1498535338000","classroomId":"-1","lessonId":"6","sn":"string","classRoomStartTime":"1498535338000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"71","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"75","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"1","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"11","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"79","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"67","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498189738000","ClassRoomEndTime":"1498535338000","classroomId":"0","lessonId":"6","sn":"string","classRoomStartTime":"1498535338000","objectId":"10000","objectType":"3"},{"createTime":"1498189738000","ClassRoomEndTime":"1498535338000","classroomId":"100","lessonId":"6","sn":"string","classRoomStartTime":"1498535338000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"30","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"94","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"22","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"16","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"10","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"},{"createTime":"1498448938000","ClassRoomEndTime":"1498535338000","classroomId":"19","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"10000","objectType":"3"}]}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.size()&gt;1</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   total值为：17.</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   搜索class记录id值为：86.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='20'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:新增学生课程记录,method:post,url:/api/v1/learning/st...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+987ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储studentid参数，值为：5。</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储lessonid参数，值为：70。</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:post</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/student/5/logging</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:{  "classRoomEndTime": 1498448938000,  "classRoomStartTime": 1498448938000,  "classroomId": 23,  "createTime": 1498448938000,  "lessonId": 70,  "sn": "string"}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"status":"ok","message":""}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.status=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值ok=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   创建学生课程记录值为：ok.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='21'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:设置学生的learning Progress,method:post,url:/api/...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+966ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:post</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/student/5</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:{"courseId":1,"currentLessonId":6}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"status":"ok","message":""}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.status=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值ok=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   设置学生learning Progress值为：ok.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='22'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:搜索学生课程记录,method:post,url:/api/v1/learning/lo...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+697ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:post</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/logging/students/search</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:{"classroomid":72,"lessonId":69}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"total":2,"data":[{"createTime":"1498448938000","ClassRoomEndTime":"1498448938000","classroomId":"72","lessonId":"69","sn":"string","classRoomStartTime":"1498448938000","objectId":"1","objectType":"1"},{"createTime":"1498448938000","ClassRoomEndTime":"1498448938000","classroomId":"11","lessonId":"69","sn":"string","classRoomStartTime":"1498448938000","objectId":"9","objectType":"1"}]}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.total=2</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值2=2</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   搜索结果classroomid值为：72.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='23'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获取学生的 Learning Progress,method:get,url:/api/...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+680ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/student/1</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:[{"objectId":1,"objectType":1,"courseId":1,"currentLessonId":6,"currentLesson":{"id":6,"parentId":3,"type":3,"cnName":"","enName":"","sn":"OW-L0-U1-L3","sequence":3,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"extra":{}},"nextLesson":{"id":7,"parentId":3,"type":3,"cnName":"","enName":"","sn":"OW-L0-U1-L4","sequence":4,"status":0,"updateTime":1497251505000,"createTime":1497251505000,"extra":{}},"createTime":1498201398000,"updateTime":1498201398000}]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.objectId[0]=1;$.nextLesson.parentId[0]=3</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值1=1</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值3=3</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='24'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获取当前 Learning Progress 下学生 id 列表,method:get,...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+391ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/students?currentLessonId=6</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:[1,9,3,7,421,422,423,424,425,856,5]</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='25'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:新增老师课程记录,method:post,url:/api/v1/learning/te...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+386ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储teacher参数，值为：4。</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储classroom参数，值为：44。</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:post</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/teacher/4/logging</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:{  "classRoomEndTime": 1498448938000,  "classRoomStartTime": 1498448938000,  "classroomId": 44,  "createTime": 1498448938000,  "lessonId":6,  "sn": "string"}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"status":"ok","message":""}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.status=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值ok=ok</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   创建老师好课程记录值为：ok.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='26'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:搜索老师课程记录,method:post,url:/api/v1/learning/lo...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+369ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:post</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/logging/teachers/search</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:{"classroomId":61}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"total":1,"data":[{"createTime":"1498448938000","ClassRoomEndTime":"1498448938000","classroomId":"61","lessonId":"6","sn":"string","classRoomStartTime":"1498448938000","objectId":"5","objectType":"2"}]}</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.total=1</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证转换后的值1=1</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   搜索老师结果值为：61.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='27'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获取老师列表,method:get,url:/api/v1/learning/class...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+357ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/learning/classes?currentLessonId=6</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:[10000,99,80,59,54,46,83,93,98,72,15,70]</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>验证数据：$.size()&gt;0</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>存储公共参数   老师列表值为：[10000,99,80,59,54,46,83,93,98,72,15,70].</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='28'>
+					<div class='collapsible-header'>
+						<div class='node-name'>desc:获取课程节点类型,method:get,url:/api/v1/utils/type,p...</div>						
+						<span class='node-time'>Jun 26, 2017 9:28:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+348ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>接口自动化测试</span>
+											<span class='category label white-text'>learning-progress-controller</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>method:get</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>url:http://gateway.sayabc-dev.com:8000/course-dev-9091/api/v1/utils/type</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>param:</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>返回状态码：200</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>resp:{"0":"OW","1":"L","2":"U","3":"L"}</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:28:18 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view --><div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>接口自动化测试</span>
+						<span class='category-status right'>
+							<span class='label pass'>28</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 28</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 26, 2017 9:28:12 PM</td>
+										<td class='linked' test-id='1'>Course Controller</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:13 PM</td>
+										<td class='linked' test-id='2'>Course Controller.desc:获取课程信息,method:get,url:/api/v1/courses,param:</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:14 PM</td>
+										<td class='linked' test-id='3'>Course Controller.desc:获得下一节lesson信息,method:get,url:/api/v1/lesson/...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:14 PM</td>
+										<td class='linked' test-id='4'>Course Controller.desc:获得下一节level信息,method:get,url:/api/v1/level/2/...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:14 PM</td>
+										<td class='linked' test-id='5'>Course Controller.desc:获取课程属性,method:get,url:/api/v1/node/${ids},pa...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:14 PM</td>
+										<td class='linked' test-id='6'>Course Controller.desc:获取子课程信息,method:get,url:/api/v1/node/1/childr...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='7'>Course Controller.desc:删除课程属性,method:delete,url:/api/v1/node/${rmid...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='8'>Course Controller.desc:验证删除课程属性,method:get,url:/api/v1/node/${rmid}...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='9'>Course Controller.desc:新增课程属性,method:post,url:/api/v1/node/${id}/pr...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='10'>Course Controller.desc:验证新增课程属性,method:get,url:/api/v1/node/${id},p...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='11'>Course Controller.desc:获取课程列表,method:get,url:/api/v1/nodes/${ids}/l...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='12'>Course Controller.desc:获取所有根节点信息,method:get,url:/api/v1/roots,param:</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='13'>Course Controller.desc:获得下一节unit信息,method:get,url:/api/v1/unit/3/ne...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:16 PM</td>
+										<td class='linked' test-id='14'>learning-progress-controller</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:16 PM</td>
+										<td class='linked' test-id='15'>learning-progress-controller.desc:获取班级的Learning Progress,method:get,url:/api/v...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:16 PM</td>
+										<td class='linked' test-id='16'>learning-progress-controller.desc:设置班级Learning Progress,method:post,url:/api/v...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:16 PM</td>
+										<td class='linked' test-id='17'>learning-progress-controller.desc:验证设置班级Learning Progress,method:get,url:/api/...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='18'>learning-progress-controller.desc:新增class课程记录,method:post,url:/api/v1/learning...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='19'>learning-progress-controller.desc:搜索class课程记录,method:post,url:/api/v1/learning...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='20'>learning-progress-controller.desc:新增学生课程记录,method:post,url:/api/v1/learning/st...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='21'>learning-progress-controller.desc:设置学生的learning Progress,method:post,url:/api/...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='22'>learning-progress-controller.desc:搜索学生课程记录,method:post,url:/api/v1/learning/lo...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='23'>learning-progress-controller.desc:获取学生的 Learning Progress,method:get,url:/api/...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='24'>learning-progress-controller.desc:获取当前 Learning Progress 下学生 id 列表,method:get,...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='25'>learning-progress-controller.desc:新增老师课程记录,method:post,url:/api/v1/learning/te...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='26'>learning-progress-controller.desc:搜索老师课程记录,method:post,url:/api/v1/learning/lo...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='27'>learning-progress-controller.desc:获取老师列表,method:get,url:/api/v1/learning/class...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='28'>learning-progress-controller.desc:获取课程节点类型,method:get,url:/api/v1/utils/type,p...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CourseController</span>
+						<span class='category-status right'>
+							<span class='label pass'>13</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 13</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 26, 2017 9:28:12 PM</td>
+										<td class='linked' test-id='1'>Course Controller</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:13 PM</td>
+										<td class='linked' test-id='2'>Course Controller.desc:获取课程信息,method:get,url:/api/v1/courses,param:</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:14 PM</td>
+										<td class='linked' test-id='3'>Course Controller.desc:获得下一节lesson信息,method:get,url:/api/v1/lesson/...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:14 PM</td>
+										<td class='linked' test-id='4'>Course Controller.desc:获得下一节level信息,method:get,url:/api/v1/level/2/...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:14 PM</td>
+										<td class='linked' test-id='5'>Course Controller.desc:获取课程属性,method:get,url:/api/v1/node/${ids},pa...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:14 PM</td>
+										<td class='linked' test-id='6'>Course Controller.desc:获取子课程信息,method:get,url:/api/v1/node/1/childr...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='7'>Course Controller.desc:删除课程属性,method:delete,url:/api/v1/node/${rmid...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='8'>Course Controller.desc:验证删除课程属性,method:get,url:/api/v1/node/${rmid}...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='9'>Course Controller.desc:新增课程属性,method:post,url:/api/v1/node/${id}/pr...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='10'>Course Controller.desc:验证新增课程属性,method:get,url:/api/v1/node/${id},p...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='11'>Course Controller.desc:获取课程列表,method:get,url:/api/v1/nodes/${ids}/l...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='12'>Course Controller.desc:获取所有根节点信息,method:get,url:/api/v1/roots,param:</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:15 PM</td>
+										<td class='linked' test-id='13'>Course Controller.desc:获得下一节unit信息,method:get,url:/api/v1/unit/3/ne...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>learning-progress-controller</span>
+						<span class='category-status right'>
+							<span class='label pass'>15</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 15</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 26, 2017 9:28:16 PM</td>
+										<td class='linked' test-id='14'>learning-progress-controller</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:16 PM</td>
+										<td class='linked' test-id='15'>learning-progress-controller.desc:获取班级的Learning Progress,method:get,url:/api/v...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:16 PM</td>
+										<td class='linked' test-id='16'>learning-progress-controller.desc:设置班级Learning Progress,method:post,url:/api/v...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:16 PM</td>
+										<td class='linked' test-id='17'>learning-progress-controller.desc:验证设置班级Learning Progress,method:get,url:/api/...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='18'>learning-progress-controller.desc:新增class课程记录,method:post,url:/api/v1/learning...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='19'>learning-progress-controller.desc:搜索class课程记录,method:post,url:/api/v1/learning...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='20'>learning-progress-controller.desc:新增学生课程记录,method:post,url:/api/v1/learning/st...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='21'>learning-progress-controller.desc:设置学生的learning Progress,method:post,url:/api/...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='22'>learning-progress-controller.desc:搜索学生课程记录,method:post,url:/api/v1/learning/lo...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='23'>learning-progress-controller.desc:获取学生的 Learning Progress,method:get,url:/api/...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='24'>learning-progress-controller.desc:获取当前 Learning Progress 下学生 id 列表,method:get,...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='25'>learning-progress-controller.desc:新增老师课程记录,method:post,url:/api/v1/learning/te...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='26'>learning-progress-controller.desc:搜索老师课程记录,method:post,url:/api/v1/learning/lo...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='27'>learning-progress-controller.desc:获取老师列表,method:get,url:/api/v1/learning/class...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 26, 2017 9:28:17 PM</td>
+										<td class='linked' test-id='28'>learning-progress-controller.desc:获取课程节点类型,method:get,url:/api/v1/utils/type,p...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>26</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>26</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Jun 26, 2017 9:28:12 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Jun 26, 2017 9:28:18 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>5,262ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>os.name</td>
+								<td>Mac OS X</td>
+							</tr>
+							<tr>
+								<td>os.arch</td>
+								<td>x86_64</td>
+							</tr>
+							<tr>
+								<td>os.version</td>
+								<td>10.12.5</td>
+							</tr>
+							<tr>
+								<td>java.version</td>
+								<td>1.8.0_121</td>
+							</tr>
+							<tr>
+								<td>java.home</td>
+								<td>/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre</td>
+							</tr>
+							<tr>
+								<td>user.name</td>
+								<td>Shen</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>接口自动化测试</td>
+							<td>28</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CourseController</td>
+							<td>13</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>learning-progress-controller</td>
+							<td>15</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view --><!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 26,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				
+				passChild: 26,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 211,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='http://extentreports.com/resx/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 			$(window).off("keydown");
+ 		</script>
+	</body>
+	
+</html>
